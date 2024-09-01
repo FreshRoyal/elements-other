@@ -6,7 +6,7 @@
 		</update>
 	</info>
 	<files>				
-		
+		<file name="muppetborn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/bj-hypes/muppetborn.xml" />
 		
 	</files>
 </index>
