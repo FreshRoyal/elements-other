@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<update version="0.0.1">
+			<file name="modern-handbook.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/source.xml" />	
+
+		<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/feats.xml" />
+		<file name="information.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/information.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-armor.xml" />
+		<file name="items-gear.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-gear.xml" />
+		<file name="items-packs.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-packs.xml" />
+		<file name="items-tools.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-tools.xml" />
+		<file name="items-vehicle.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-vehicle.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-weapons.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/spells.xml" />				
+		
+		
+	</files>
+</index>

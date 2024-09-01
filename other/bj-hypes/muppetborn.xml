@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="muppetborn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/bj-hypes/muppetborn.xml" />
+		</update>
+	</info>
+
+	<element name="The Muppetborn" type="Source" source="Core" id="ID_SOURCE_MUPPETBORN">
+		<description>
+			<p>"A proud and silly race, Muppetborn are chaotic creatures known for innate magical abilities. Born appearing as small balls of cloth, they quickly develop into creatures that resemble humans, animals, and even monsters…but that doesn’t make them evil. Easily spotted by their colorful furs, most Muppetborn who live outside their clans or “Streets” frequently find themselves uninvited from “proper” civilization due to their odd habits. But really, is it a party without a Muppetborn swinging from the chandelier?"</p>
+		</description>
+		<setters>
+			<set name="abbreviation">MUPP</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/bj-hypes/MUPP.png</set>
+			<set name="url">https://bjhypes.com/muppetborn/</set>
+			<set name="author" abbreviation="BJHY" url="https://bjhypes.com/">BJ Hypes</set>
+			<set name="release">20190401</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+<element name="Muppetborn" type="Race" source="The Muppetborn" id="ID_MUPP_RACE_MUPPETBORN">
+		<description>
+			<p class="flavor">Fabric? Is that all I am to you? My blood may be colorful and glittery, but I bleed nonetheless. My people have long struggled to be taken seriously, it is why so many of us turn to our faith, our creator: The Hand. It is a force within all of us that guides our actions and speaks through all Muppetborn. The war of my people is far from over, and it will be the bloodiest yet. Waka waka.</p>
+			<p class="text-align:right">–Fuzzwhizzle Plumpytops, Hand of The Grouch</p>
+			<h4>FUZZY AND WARM</h4>
+			<p>A proud and silly race, Muppetborn are chaotic creatures known for innate magical abilities. Born appearing as small balls of cloth, they quickly develop into creatures that resemble humans, animals, and even monsters…but that doesn’t make them evil. Easily spotted by their colorful furs, most Muppetborn who live outside their clans or “Streets” frequently find themselves uninvited from “proper” civilization due to their odd habits. But really, is it a party without a Muppetborn swinging from the chandelier?</p>
+			<h4>MUPPETBORN TRAITS</h4>
+			<p>
+				<span class="feature">Ability Score Increase. </span>Your Constitution and Dexterity increase by one.<br />
+				<span class="feature">Age. </span>At birth, they resemble small balls of colorful fabric with googly eyes, but quickly sprout limbs and mature at roughly double the speed of humans. The average Muppetborn lives for 60 to 90 years, however some have lived well past 300.<br />
+				<span class="feature">Alignment. </span>Imbued with sporadic energy, Muppetborn often live on the chaotic end of the spectrum.<br />
+				<span class="feature">Size. </span>As varied as the thoughts in their heads, the smallest Muppetborn rest just shy of two feet tall while some are large enough to sink even the sturdiest of rowboats.<br />
+				<span class="feature">Speed. </span>Your base shuffling speed is 30 feet. <br />
+				<span class="feature">Always Obscured. </span>No matter how you look at them, a Muppetborn’s bottom half is always out of view. It’s said that even when one stands in the middle of a field, the earth will rise up to meet them. For this reason, they are always considered to have half cover and receive a permanent +2 bonus to AC.<br />
+				<span class="feature">The Hand. </span>Muppetborn mythology speaks of The Hand inside each of them. They innately know the cantrip Mage Hand, however the floating hand can only lift up to five pounds and move up to five feet per character level.<br />
+				<span class="feature">Nom Nom Nom. </span>Muppetborn absorb the energy from food without ever having to swallow it. <br />
+				<span class="feature">Cloth And Color. </span>All Muppetborn know the cantrip “Mending” and once per long rest it can be used to heal 1d8 hitpoints. This increases to twice per long rest at 5th level, three times at 10th level, four times at 14th level, and five times at 18th level. <br />
+				<span class="feature">Languages. </span>You can speak, read, and write Common, Clothing, and Ventrillo.<br />
+				<span class="feature">Subraces. </span>Three main subraces of Muppetborn exist: Hand of The Monster, Hand of The Grouch, and Hand of The Animal. Pick one for your character.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Muppetborn)" supports="Custom Ability Score Increase 1" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<select type="Racial Trait" name="Size (Muppetborn)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_MUPP_LANGUAGE_CLOTHING" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_MUPP_LANGUAGE_VENTRILLO" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||Muppetborn Language" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<stat name="ac:misc" value="2" />
+			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_HAND" />
+			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_NOM_NOM_NOM" />
+			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_CLOTH_AND_COLOR" />
+			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_SUBRACE" />
+		</rules>
+	</element>
+	<append id="ID_MUPP_LANGUAGE_CLOTHING">
+		<supports>Muppetborn Language</supports>
+	</append>
+	<append id="ID_MUPP_LANGUAGE_VENTRILLO">
+		<supports>Muppetborn Language</supports>
+	</append>
+	<element name="The Hand" type="Racial Trait" source="The Muppetborn" id="ID_MUPP_RACIAL_TRAIT_HAND">
+		<description>
+			<p>Muppetborn mythology speaks of The Hand inside each of them. They innately know the cantrip Mage Hand, however the floating hand can only lift up to five pounds and move up to five feet per character level.</p>
+		</description>
+		<sheet>
+			<description>You innately know the cantrip Mage Hand, however the floating hand can only lift up to five pounds and move up to {{hand:calculation}} ft. per character level.</description>
+		</sheet>
+		<rules>
+			<stat name="hand:calculation" value="level" />
+			<stat name="hand:calculation" value="level" />
+			<stat name="hand:calculation" value="level" />
+			<stat name="hand:calculation" value="level" />
+			<stat name="hand:calculation" value="level" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
+		</rules>
+	</element>
+	<element name="Nom Nom Nom" type="Racial Trait" source="The Muppetborn" id="ID_MUPP_RACIAL_TRAIT_NOM_NOM_NOM">
+		<description>
+			<p>Muppetborn absorb the energy from food without ever having to swallow it.</p>
+		</description>
+		<sheet>
+			<description>Muppetborn absorb the energy from food without ever having to swallow it.</description>
+		</sheet>
+	</element>
+	<element name="Cloth And Color" type="Racial Trait" source="The Muppetborn" id="ID_MUPP_RACIAL_TRAIT_CLOTH_AND_COLOR">
+		<description>
+			<p>All Muppetborn know the cantrip “Mending” and once per long rest it can be used to heal 1d8 hitpoints. This increases to twice per long rest at 5th level, three times at 10th level, four times at 14th level, and five times at 18th level.</p>
+		</description>
+		<sheet>
+			<description usage="1/Long Rest">You know the Mending cantrip and can use it to heal 1d8 hitpoints once per long rest.</description>
+			<description level="5" usage="2/Long Rest">You know the Mending cantrip and can use it to heal 1d8 hitpoints twice per long rest.</description>
+			<description level="10" usage="3/Long Rest">You know the Mending cantrip and can use it to heal 1d8 hitpoints three times per long rest.</description>
+			<description level="14" usage="4/Long Rest">You know the Mending cantrip and can use it to heal 1d8 hitpoints four times per long rest.</description>
+			<description level="18" usage="5/Long Rest">You know the Mending cantrip and can use it to heal 1d8 hitpoints five times per long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />
+		</rules>
+	</element>
+	<element name="Muppetborn Subrace" type="Racial Trait" source="The Muppetborn" id="ID_MUPP_RACIAL_TRAIT_SUBRACE">
+		<description>
+			<p>Three main subraces of Muppetborn exist: Hand of The Monster, Hand of The Grouch, and Hand of The Animal. Pick one for your character.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Muppetborn Subrace" supports="Muppetborn" />
+		</rules>
+	</element>
+	<element name="Hand of The Monster" type="Sub Race" source="The Muppetborn" id="ID_MUPP_SUBRACE_MONSTER">
+		<supports>Muppetborn</supports>
+		<description>
+			<p>     
+				<span class="feature">+1 Charisma Increase</span><br />
+				<span class="feature">Yaaaaay. </span>At 3rd level, you can perform the mighty roar of The Monster as a bonus action once per short rest. This gives a +5 bonus to the next attack each of your allies within 60 feet makes, as long as they do so in the next minute. Additionally, any ally that makes a Wisdom or Charisma saving throw in the next minute does so with advantage.<br />
+			</p>  
+		</description>
+		<sheet alt="Muppetborn (Hand of The Monster)" display="false" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hand of The Monster)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_YAAAAAY" level="3" />
+		</rules>
+	</element>
+	<element name="Yaaaaay" type="Racial Trait" source="The Muppetborn" id="ID_MUPP_RACIAL_TRAIT_YAAAAAY">
+		<description>
+			<p>At 3rd level, you can perform the mighty roar of The Monster as a bonus action once per short rest. This gives a +5 bonus to the next attack each of your allies within 60 feet makes, as long as they do so in the next minute. Additionally, any ally that makes a Wisdom or Charisma saving throw in the next minute does so with advantage.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You give a +5 bonus to the next attack of each ally within 60 feet for one minute. Any ally that makes a wisdom or charisma saving throw within the next minute does so with advantage.</description>
+		</sheet>
+	</element>
+	<element name="Hand of The Grouch" type="Sub Race" source="The Muppetborn" id="ID_MUPP_SUBRACE_GROUCH">
+		<supports>Muppetborn</supports>
+		<description>
+			<p>     
+				<span class="feature">+1 Strength Increase</span><br />
+				<span class="feature">Garbage ‘Can’, Not Garbage ‘Cannot’. </span>At 3rd level, you’ve learned to fortify yourself amongst the lowest of society and gain proficiency in medium and heavy armor. Additionally, you do not make stealth checks at disadvantage while wearing heavy armor if moving at half speed or slower. Finally, you gain advantage on stealth checks if blending in with filth or garbage.<br />
+			</p>  
+		</description>
+		<sheet alt="Muppetborn (Hand of The Grouch)" display="false" />
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hand of The Grouch)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_GARBAGE_CAN" level="3" />
+		</rules>
+	</element>
+	<element name="Garbage ‘Can’, Not Garbage ‘Cannot’" type="Racial Trait" source="The Muppetborn" id="ID_MUPP_RACIAL_TRAIT_GARBAGE_CAN">
+		<description>
+			<p>At 3rd level, you’ve learned to fortify yourself amongst the lowest of society and gain proficiency in medium and heavy armor. Additionally, you do not make stealth checks at disadvantage while wearing heavy armor if moving at half speed or slower. Finally, you gain advantage on stealth checks if blending in with filth or garbage.</p>
+		</description>
+		<sheet>
+			<description>You do not make stealth checks at disadvantage while wearing heavy armor if moving at half speed or slower. You gain advantage on stealth checks if blending in with filth or garbage.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool, Garbage 'Can', Not Garbage 'Cannot'" number="2" supports="Simple Weapon||Tool||Muppetborn Armor" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+		<supports>Muppetborn Armor</supports>
+	</append>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
+		<supports>Muppetborn Armor</supports>
+	</append>
+	<element name="Hand of The Animal" type="Sub Race" source="The Muppetborn" id="ID_MUPP_SUBRACE_ANIMAL">
+		<supports>Muppetborn</supports>
+		<description>
+			<p>     
+				<span class="feature">+1 Wisdom Increase</span><br />
+				<span class="feature">One Of Us. </span>Many Muppetborn resemble animals. From birth, they have advantage on animal handling checks with these animals and can communicate with them. At 3rd level, they can communicate with similar types of animals, and can also cast Beast Bond once per short or long rest without using a spell slot.<br />
+			</p>  
+		</description>
+		<sheet alt="Muppetborn (Hand of The Animal)" display="false" />
+		<rules>
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hand of The Animal)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_ONE_OF_US" />
+		</rules>
+	</element>
+	<element name="One Of Us" type="Racial Trait" source="The Muppetborn" id="ID_MUPP_RACIAL_TRAIT_ONE_OF_US">
+		<description>
+			<p>Many Muppetborn resemble animals. From birth, they have advantage on animal handling checks with these animals and can communicate with them. At 3rd level, they can communicate with similar types of animals, and can also cast Beast Bond once per short or long rest without using a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on animal handling checks with these animals and can communicate with them.</description>
+			<description level="3" usage="1/Short Rest">You can communicate with similar types of animals, and can also cast Beast Bond once per short or long rest without using a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_BEAST_BOND" level="3" />
+		</rules>
+	</element>
+	<element name="Clothing" type="Language" source="The Muppetborn" id="ID_MUPP_LANGUAGE_CLOTHING">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Muppetborn.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Muppetborn</set>
+		</setters>
+	</element>
+
+	<element name="Ventrillo" type="Language" source="The Muppetborn" id="ID_MUPP_LANGUAGE_VENTRILLO">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Muppetborn.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Muppetborn</set>
+		</setters>
+	</element>
+	<element name="The Hand" type="Deity" source="The Muppetborn" id="ID_MUPP_DEITY_THE_HAND">
+		<description>
+			<p class="flavor">deity of the muppetborn</p>
+		</description>
+		<setters>
+			<set name="alignment">CN</set>
+			<set name="domains">--</set>
+			<set name="symbol">--</set>
+		</setters>
+		<sheet>
+			<description>deity of the muppetborn</description>
+		</sheet>
+	</element>
+</elements>
