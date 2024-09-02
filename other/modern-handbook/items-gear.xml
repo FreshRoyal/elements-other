@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items-gear.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-gear.xml" />
+		</update>
+	</info>
+
+	<element name="Barbed Wire (50 feet)" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_BARBED_WIRE_50FEET">
+		<description>
+			<p>This is a roll of barbed steel wire designed to keep individuals in or out. A creature trying to cross barbed wire must make a Dexterity saving throw (DC 10) or take 1d4 piercing damage and be restrained by the wire. A creature restrained by the barbed wire can use its action to make a Strength or Dexterity check (its choice) against the DC. On a success, it frees itself, on a failure, it takes 1d4 piercing damage. For setting up the barbed wire, it comes with a pair of thick gloves and anchor posts.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="35">35 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Battery" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_BATTERY">
+		<description>
+			<p>An electric battery is a device consisting of one or more electrochemical cells with external connections provided to power electrical devices such as flashlights and metal detectors. Each battery recharges 5 spent charges to any electrical gear.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Binoculars" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_BINOCULARS">
+		<description>
+			<p>Objects viewed through the binoculars are magnified to twice their size.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Book, 50 pages" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_BOOK_50PAGES">
+		<description>
+			<p>This category includes personal organizers, datebooks, planners, diaries, notebooks, and such. The content and sections may vary depending on the type of book.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">4</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Book, 100 pages" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_BOOK_100PAGES">
+		<description>
+			<p>This category includes personal organizers, datebooks, planners, diaries, notebooks, and such. The content and sections may vary depending on the type of book.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Book, 200 pages" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_BOOK_200PAGES">
+		<description>
+			<p>This category includes personal organizers, datebooks, planners, diaries, notebooks, and such. The content and sections may vary depending on the type of book.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">17</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Book, 300 pages" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_BOOK_300PAGES">
+		<description>
+			<p>This category includes personal organizers, datebooks, planners, diaries, notebooks, and such. The content and sections may vary depending on the type of book.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Briefcase" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_BRIEFCASE">
+		<description>
+			<p>Made from leather and plastic. It has mechanical locks that require either a key or a combination to open.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Camera, still" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_CAMERA_STILL">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Camera, video" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_CAMERA_VIDEO">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Compass" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_COMPASS">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Desktop, Low-End" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_DESKTOP_LOW_END">
+		<description>
+			<p>This can be any large computing platform, such as a client workstation or server. The typical desktop computer has hundreds of gigabytes of storage space, a high-quality monitor and a broadband or modem access to the Internet.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Desktop, Mid-Range" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_DESKTOP_MID_RANGE">
+		<description>
+			<p>This can be any large computing platform, such as a client workstation or server. The typical desktop computer has hundreds of gigabytes of storage space, a high-quality monitor and a broadband or modem access to the Internet.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Desktop, High-End" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_DESKTOP_HIGH_END">
+		<description>
+			<p>This can be any large computing platform, such as a client workstation or server. The typical desktop computer has hundreds of gigabytes of storage space, a high-quality monitor and a broadband or modem access to the Internet.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Dictionary" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_DICTIONARY">
+		<description>
+			<p>Inside this book you have the list of words and translations from one standard language to common. When you're reading something in the dictionary's language, you can spend 10 minutes for each page of text to translate it.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="ECM Jammer" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_ECM_JAMMER">
+		<description>
+			<p>An ECM jammer has 10 charges. As an action, you can expend one charge and turn the ECM jammer on, disabling cameras and impeding all incoming and outgoing wireless communication, including smartphones, radio detonators, Wi-Fi and similar within 100 feet from the ECM jammer for 5 minutes.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="EMF Device" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_EMF_JAMMER">
+		<description>
+			<p>An EMF device measures ambient (surrounding) electromagnetic fields. Most of these devices can detect electromagnetic fluctuations and measure in different levels of intensity. These devices are pretty popular among ghost hunting teams.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Fire Extinguisher" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIRE_EXTINGUISHER">
+		<description>
+			<p>The extinguisher has 10 charges. As an action, you can expend one charge to extinguish a 5-foot area of fire.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Flash Goggles" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FLASH_GOGGLES">
+		<description>
+			<p>Designed to provide protection against any blinding effects from bright light. While using flash goggles, you are immune against any blinding effect caused by lightning.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Flashlight" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FLASHLIGHT">
+		<description>
+			<p>A portable hand-held electric light. A flashlight has 5 charges. As a bonus action, you can expend one charge to turn the flashlight on, illuminating a 60-foot cone and dim light for an additional 60 feet for one hour. You can use a bonus action to turn the flashlight off.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Gas Mask" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_GAS_MASK">
+		<description>
+			<p>This mask is used to protect the user from inhaling airborne pollutants and toxic gases. The mask forms a sealed cover over the nose and mouth, but may also cover the eyes and other vulnerable soft tissues of the face. While wearing the mask you are immune to inhaled poisons.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="GPS" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_GPS">
+		<description>
+			<p>It provides geolocation and time information to a GPS receiver anywhere on or near the Earth where there is an unobstructed line of sight to four or more GPS satellites.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Hammock" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_HAMMOCK">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Handbag" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_HANDBAG">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Infrared Goggles" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_INFRARED_GOGGLES">
+		<description>
+			<p>An infrared goggles has 10 charges. As a bonus action, you can expend one charge to turn them on to see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light for 10 minutes. You can't discern color in darkness and the image color produced is typically monochrome (shades of green or blue).</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Infrared Thermometer" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_INFRARED_THERMOMETER">
+		<description>
+			<p>An Infrared Thermometer is a thermometer which infers temperature from a portion of the thermal radiation emitted by the object being measured. An infrared Thermometer can measure temperature from a distance, displaying the value in a small screen.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Laptop, Low-End" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_LAPTOP_LOW_END">
+		<description>
+			<p>A portable version of a desktop computer. In general, laptops are as not as fast or powerful as its equivalent desktop version.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Laptop, Mid-Range" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_LAPTOP_MID_RANGE">
+		<description>
+			<p>A portable version of a desktop computer. In general, laptops are as not as fast or powerful as its equivalent desktop version.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">600</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Laptop, High-End" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_LAPTOP_HIGH_END">
+		<description>
+			<p>A portable version of a desktop computer. In general, laptops are as not as fast or powerful as its equivalent desktop version.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1200</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Light Stick" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_LIGHT_STICK">
+		<description>
+			<p>It consists of a translucent plastic tube containing isolated substances that, when combined, make light through chemiluminescence, so it does not require an external energy source. The light color can vary (usually red, green or blue).</p>
+			<p class="indent">As a bonus action, you can activate the stick, providing bright light in a 20-foot radius and a dim light for an additional 20 feet for one hour. A light stick can only be used once, and when activated it cannot be turned off.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="0.25">1/4 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Lighter" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_LIGHTER">
+		<description>
+			<p>A lighter has 20 charges. You can expend one charge to create a flame for one minute. The lighter sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Metal Detector" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_METAL_DETECTOR">
+		<description>
+			<p>A handled portable sensor for detecting bits and pieces of metal in and on the ground. The metal detector has 10 charges. As an action, you can expend one charge to gain advantage on Wisdom (Perception) checks you make when searching for metals and metallic objects for 10 minutes.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Multi-tool Pocketknife" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_MULTI_TOOL_POCKETKNIFE">
+		<description>
+			<p>This hand tool combines several individual functions in a single unit, commonly a knife blade, a reamer, a bottle-opener-screwdriver-wire stripper, and a can-opener-screwdriver.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Parachute" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PARACHUTE">
+		<description>
+			<p>A parachute requires a minimum altitude to be fully deployed. A character takes no fall damage when deploying a parachute at 300 feet or higher altitude. It takes half falling damage when deploying a parachute between 300 and 200 feet, and full falling damage if the parachute is deployed at 200 feet or lower.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="50">50 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Pen" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PEN">
+		<description>
+			<p>Pens commonly used in a modern setting can be categorized based on the mechanism of the writing tip and the type of ink, such as a ballpoint pen, a gel pen, a rollerball pen, a marker, and so on.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="cp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Pepper Spray" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PEPPER_SPRAY">
+		<description>
+			<p>A creature within 10 feet from you must make a Constitution saving throw or be blinded for 1d4 rounds (DC 15). Any creature wearing goggles or something to protect its eyes automatically passes the check. A spray can only be used once.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Plastic bottle" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PLASTIC_BOTTLE">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="2">2 lb. (full)</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Purification Kit" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PURIFICATION_KIT">
+		<description>
+			<p>This kit is a card or plastic box containing different chemical components used for removing contaminants, bacteria, toxins, and such. The kit has ten uses. As an action, you can expend one use of the kit to purify one pound of food or one gallon of drink, removing any poison and diseases.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Skis and Poles" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SKIS_AND_POLES">
+		<description>
+			<p>While traveling, skis allow you to move across snow and icy surfaces without reducing your speed. It takes an action to don and to remove the skis.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Sleeping Bag" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SLEEPING_BAG">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Smartphone, Low-End" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SMARTPHONE_LOW_END">
+		<description>
+			<p>A smartphone is a mobile personal computer with a mobile operating system with features useful for mobile or handheld use. Smartphones have the ability to place and receive voice/video calls and create and receive text messages, have personal digital assistants, an event calendar, a media player, video games, GPS navigation, digital camera and digital video camera. Smartphones can access the Internet through cellular frequencies or Wi-Fi and can run a variety of third-party software components.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Smartphone, Mid-Range" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SMARTPHONE_MID_RANGE">
+		<description>
+			<p>A smartphone is a mobile personal computer with a mobile operating system with features useful for mobile or handheld use. Smartphones have the ability to place and receive voice/video calls and create and receive text messages, have personal digital assistants, an event calendar, a media player, video games, GPS navigation, digital camera and digital video camera. Smartphones can access the Internet through cellular frequencies or Wi-Fi and can run a variety of third-party software components.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Smartphone, High-End" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SMARTPHONE_HIGH_END">
+		<description>
+			<p>A smartphone is a mobile personal computer with a mobile operating system with features useful for mobile or handheld use. Smartphones have the ability to place and receive voice/video calls and create and receive text messages, have personal digital assistants, an event calendar, a media player, video games, GPS navigation, digital camera and digital video camera. Smartphones can access the Internet through cellular frequencies or Wi-Fi and can run a variety of third-party software components.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Suitcase" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SUITCASE">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Tablet, Low-End" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TABLET_LOW_END">
+		<description>
+			<p>A tablet is a mobile computer with a touchscreen display, which is usually in color, processing circuitry, and a rechargeable battery in a single thin, flat package. Most tablets also have sensors, including digital cameras, a microphone, and an accelerometer so images on screens are always displayed upright. The touchscreen display uses gestures by finger or stylus to replace the mouse, trackpad and keyboard used with desktop computers and laptops. Tablets are larger than smartphones, with screens 7 inches or larger. However, much of a tablet's functionality resembles that of a modern smartphone, using a virtual keyboard and running a mobile operating system.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Tablet, Mid-Range" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TABLET_MID_RANGE">
+		<description>
+			<p>A tablet is a mobile computer with a touchscreen display, which is usually in color, processing circuitry, and a rechargeable battery in a single thin, flat package. Most tablets also have sensors, including digital cameras, a microphone, and an accelerometer so images on screens are always displayed upright. The touchscreen display uses gestures by finger or stylus to replace the mouse, trackpad and keyboard used with desktop computers and laptops. Tablets are larger than smartphones, with screens 7 inches or larger. However, much of a tablet's functionality resembles that of a modern smartphone, using a virtual keyboard and running a mobile operating system.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Tablet, High-End" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TABLET_HIGH_END">
+		<description>
+			<p>A tablet is a mobile computer with a touchscreen display, which is usually in color, processing circuitry, and a rechargeable battery in a single thin, flat package. Most tablets also have sensors, including digital cameras, a microphone, and an accelerometer so images on screens are always displayed upright. The touchscreen display uses gestures by finger or stylus to replace the mouse, trackpad and keyboard used with desktop computers and laptops. Tablets are larger than smartphones, with screens 7 inches or larger. However, much of a tablet's functionality resembles that of a modern smartphone, using a virtual keyboard and running a mobile operating system.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Tent, four-person" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TENT_FOUR_PERSON">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">4</set>
+			<set name="weight" lb="40">40 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Tent, pavillion" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TENT_PAVILLION">
+		<description>
+			<p>A huge open-air canopy, plus stakes, poles and ropes. It can comfortably fit twenty Medium-size humanoids underneath.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="200">200 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Two-way Radio" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TWO_WAY_RADIO">
+		<description>
+			<p>A hand-held, portable, two-way radio transceiver. Multiple radios use a single channel, and only one radio on the channel can transmit at a time, although any number can listen. The transceiver is normally in receiving mode and when the user wants to talk he presses a "push-to-talk" button. You can communicate with someone using a two-way radio at the same frequency up to 20 miles.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="USB Flash Drive" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_USB_FLASH_DRIVE">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Wallet" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_WALLET">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Watch" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_WATCH">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+</elements>

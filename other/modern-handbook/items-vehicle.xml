@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items-vehicle.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-vehicle.xml" />
+		</update>
+	</info>
+
+	<element name="Tool Proficiency  (Vehicles (air))" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_AIR">
+		<supports>Tool, Vehicles</supports>
+	</element>
+	
+	<!--Ground Vehicles-->
+	<element name="Motorcycle" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_MOTORCYCLE">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 270 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 90 ft.</li>
+				<li><strong>Passengers.</strong> 1</li>
+				<li><strong>Cargo.</strong> —</li>
+				<li><strong>AC.</strong> 13 + Dex modifier</li>
+				<li><strong>HP.</strong> 22</li>
+				<li><strong>Damage Threshold.</strong> 4</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Sedan" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SEDAN">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 255 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 85 ft.</li>
+				<li><strong>Passengers.</strong> 4</li>
+				<li><strong>Cargo.</strong> 300 lb.</li>
+				<li><strong>AC.</strong> 13 + Dex modifier</li>
+				<li><strong>HP.</strong> 40</li>
+				<li><strong>Damage Threshold.</strong> 8</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">15000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Sports Car" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SPORTS_CAR">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 315 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 105 ft.</li>
+				<li><strong>Passengers.</strong> 1</li>
+				<li><strong>Cargo.</strong> 200 lb.</li>
+				<li><strong>AC.</strong> 13 + Dex modifier</li>
+				<li><strong>HP.</strong> 34</li>
+				<li><strong>Damage Threshold.</strong> 8</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">40000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="SUV" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SUV">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 210 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 70 ft.</li>
+				<li><strong>Passengers.</strong> 4</li>
+				<li><strong>Cargo.</strong> 500 lb.</li>
+				<li><strong>AC.</strong> 14 + Dex modifier (max 2)</li>
+				<li><strong>HP.</strong> 50</li>
+				<li><strong>Damage Threshold.</strong> 10</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">25000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Pickup" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PICKUP">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 180 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 60 ft.</li>
+				<li><strong>Passengers.</strong> 3</li>
+				<li><strong>Cargo.</strong> 1,600 lb.</li>
+				<li><strong>AC.</strong> 14 + Dex modifier (max 2)</li>
+				<li><strong>HP.</strong> 50</li>
+				<li><strong>Damage Threshold.</strong> 8</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">22000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Van" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_VAN">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 165 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 55 ft.</li>
+				<li><strong>Passengers.</strong> 8</li>
+				<li><strong>Cargo.</strong> 4,800 lb.</li>
+				<li><strong>AC.</strong> 13 + Dex modifier (max 2)</li>
+				<li><strong>HP.</strong> 50</li>
+				<li><strong>Damage Threshold.</strong> 8</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">20000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Truck" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TRUCK">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 120 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 40 ft.</li>
+				<li><strong>Passengers.</strong> 2</li>
+				<li><strong>Cargo.</strong> 33,000 lb.</li>
+				<li><strong>AC.</strong> 15</li>
+				<li><strong>HP.</strong> 70</li>
+				<li><strong>Damage Threshold.</strong> 10</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">40000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+	
+	<element name="Wheeled APC" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_WHEELED_APC">
+		<description>
+			<p>The wheeled APC comes with a light machinegun in a ring mount at the top which an occupant can fire (the ring mount count as the bipod accessory, and it allows the gun to traverse 360 degrees).</p>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 180 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 60 ft.</li>
+				<li><strong>Passengers.</strong> 13</li>
+				<li><strong>Cargo.</strong> 250 lb.</li>
+				<li><strong>AC.</strong> 16 + Dex modifier (max 2)</li>
+				<li><strong>HP.</strong> 70</li>
+				<li><strong>Damage Threshold.</strong> 12</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">60000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<!--Air Vehicles-->
+	<element name="Helicopter, Civilian" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_HELICOPTER_CIVILIAN">
+		<supports>Airborne</supports>
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 255 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 85 ft.</li>
+				<li><strong>Passengers.</strong> 4</li>
+				<li><strong>Cargo.</strong> 250 lb.</li>
+				<li><strong>AC.</strong> 12 + Dex modifier</li>
+				<li><strong>HP.</strong> 38</li>
+				<li><strong>Damage Threshold.</strong> 8</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">100000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Helicopter, Military" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_HELICOPTER_MILITARY">
+		<supports>Airborne</supports>
+		<description>
+			<p>The military helicopter comes with two light machineguns mounted on the sides, which are controlled and fired by the copilot.</p>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 330 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 110 ft.</li>
+				<li><strong>Passengers.</strong> —</li>
+				<li><strong>Cargo.</strong> 100 lb.</li>
+				<li><strong>AC.</strong> 16 + Dex modifier (max 2)</li>
+				<li><strong>HP.</strong> 50</li>
+				<li><strong>Damage Threshold.</strong> 10</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">175000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Helicopter, Transport" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_HELICOPTER_TRANSPORT">
+		<supports>Airborne</supports>
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 210 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 70 ft.</li>
+				<li><strong>Passengers.</strong> 13</li>
+				<li><strong>Cargo.</strong> 5,000 lb.</li>
+				<li><strong>AC.</strong> 10 + Dex modifier</li>
+				<li><strong>HP.</strong> 40</li>
+				<li><strong>Damage Threshold.</strong> 8</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">130000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Prop Plane, Civilian" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PROP_PLANE_CIVILIAN">
+		<supports>Airborne</supports>
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 225 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 75 ft.</li>
+				<li><strong>Passengers.</strong> 3</li>
+				<li><strong>Cargo.</strong> 120 lb.</li>
+				<li><strong>AC.</strong> 12 + Dex modifier</li>
+				<li><strong>HP.</strong> 40</li>
+				<li><strong>Damage Threshold.</strong> 8</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">110000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Prop Plane, Transport" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PROP_PLANE_TRANSPORT">
+		<supports>Airborne</supports>
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 210 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 70 ft.</li>
+				<li><strong>Passengers.</strong> 10</li>
+				<li><strong>Cargo.</strong> 10,000 lb.</li>
+				<li><strong>AC.</strong> 12 + Dex modifier</li>
+				<li><strong>HP.</strong> 45</li>
+				<li><strong>Damage Threshold.</strong> 8</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">125000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<!--Water Vehicles-->
+	<element name="Personal Watercraft" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PERSONAL_WATERCRAFT">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 150 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 50 ft.</li>
+				<li><strong>Passengers.</strong> 1</li>
+				<li><strong>Cargo.</strong> 60 lb.</li>
+				<li><strong>AC.</strong> 13 + Dex modifier</li>
+				<li><strong>HP.</strong> 20</li>
+				<li><strong>Damage Threshold.</strong> 4</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">6000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Runabout" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_RUNABOUT">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 105 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 35 ft.</li>
+				<li><strong>Passengers.</strong> 5</li>
+				<li><strong>Cargo.</strong> 2,100 lb.</li>
+				<li><strong>AC.</strong> 13 + Dex modifier</li>
+				<li><strong>HP.</strong> 30</li>
+				<li><strong>Damage Threshold.</strong> 6</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">25000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+	<element name="Cabin Cruiser" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_CABIN_CRUISER">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Top Speed.</strong> 120 ft.</li>
+				<li><strong>Acceleration Speed.</strong> 40 ft.</li>
+				<li><strong>Passengers.</strong> 3</li>
+				<li><strong>Cargo.</strong> 2,100 lb.</li>
+				<li><strong>AC.</strong> 13 + Dex modifier</li>
+				<li><strong>HP.</strong> 40</li>
+				<li><strong>Damage Threshold.</strong> 8</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">40000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+
+</elements>

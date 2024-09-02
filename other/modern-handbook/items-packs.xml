@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items-packs.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-packs.xml" />
+		</update>
+	</info>
+	<element name="Adventuring Pack" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_ADVENTURING_PACK">
+		<description>
+			<p><i>This is a new pack made for modern settings</i></p>
+			<p class="indent">Includes a backpack, a compass, a flashlight, a multi-tool pocketknife, a plastic bottle, 10 days of rations, a sleeping bag, and 50 feet of hempen rope.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="0">0 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB_ITEM_BACKPACK</item>
+			<item>ID_DCAD_MH_ITEM_COMPASS</item>
+			<item>ID_DCAD_MH_ITEM_FLASHLIGHT</item>
+			<item>ID_DCAD_MH_ITEM_MULTI_TOOL_POCKETKNIFE</item>
+			<item>ID_DCAD_MH_ITEM_PLASTIC_BOTTLE</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_RATIONS_1DAY</item>
+			<item>ID_DCAD_MH_ITEM_SLEEPING_BAG</item>
+			<item>ID_WOTC_PHB_ITEM_ROPE_HEMPEN_50FEET</item>
+		</extract>
+	</element>
+	<element name="Modern Burglar's Pack" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_MODERN_BURGLARS_PACK">
+		<description>
+			<p><i>This is a revised version of the Burglar's Pack for modern settings</i></p>
+			<p class="indent">Includes a backpack, a bag of 1,000 ball bearings, a multi-tool pocketknife, 5 light sticks, a pepper spray, a crowbar, a hammer, 10 pitons, a flashlight, 2 batteries, 5 days of rations, a lighter, a water bottle, and 50 feet of hempen rope.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">16</set>
+			<set name="weight" lb="0">0 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB_ITEM_BACKPACK</item>
+			<item>ID_WOTC_PHB_ITEM_BALLBEARINGS</item>
+			<item>ID_DCAD_MH_ITEM_MULTI_TOOL_POCKETKNIFE</item>
+			<item amount="5">ID_DCAD_MH_ITEM_LIGHT_STICK</item>
+			<item>ID_DCAD_MH_ITEM_PEPPER_SPRAY</item>
+			<item>ID_WOTC_PHB_ITEM_CROWBAR</item>
+			<item>ID_WOTC_PHB_ITEM_HAMMER</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_PITON</item>
+			<item>ID_DCAD_MH_ITEM_FLASHLIGHT</item>
+			<item amount="2">ID_DCAD_MH_ITEM_BATTERY</item>
+			<item amount="5">ID_WOTC_PHB_ITEM_RATIONS_1DAY</item>
+			<item>ID_DCAD_MH_ITEM_LIGHTER</item>
+			<item>ID_DCAD_MH_ITEM_PLASTIC_BOTTLE</item>
+			<item>ID_WOTC_PHB_ITEM_ROPE_HEMPEN_50FEET</item>
+		</extract>
+	</element>
+	<element name="Modern Diplomat's Pack" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_MODERN_DIPLOMATS_PACK">
+		<description>
+			<p><i>This is a revised version of the Diplomat's Pack for modern settings</i></p>
+			<p class="indent">Includes a suitcase, a briefcase, a set of fine clothes, an ink pen, a small 50-page book, 5 sheets of paper, a vial of perfume, a watch, sealing wax, and soap.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">39</set>
+			<set name="weight" lb="0">0 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_DCAD_MH_ITEM_SUITCASE</item>
+			<item>ID_DCAD_MH_ITEM_BRIEFCASE</item>
+			<item>ID_WOTC_PHB_ITEM_CLOTHES_FINE</item>
+			<item>ID_DCAD_MH_ITEM_PEN</item>
+			<item>ID_DCAD_MH_ITEM_BOOK_50PAGES</item>
+			<item amount="5">ID_WOTC_PHB_ITEM_PAPER_ONESHEET</item>
+			<item>ID_WOTC_PHB_ITEM_PERFUME_VIAL</item>
+			<item>ID_DCAD_MH_ITEM_WATCH</item>
+			<item>ID_WOTC_PHB_ITEM_SEALINGWAX</item>
+			<item>ID_WOTC_PHB_ITEM_SOAP</item>
+		</extract>
+	</element>
+	<element name="Modern Dungeoneer's Pack" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_MODERN_DUNGEONEERS_PACK">
+		<description>
+			<p><i>This is a revised version of the Bungeoneer's Pack for modern settings</i></p>
+			<p class="indent">Includes a backpack, a crowbar, a hammer, 10 pitons, 10 light sticks, a multi-tool pocketknife, 10 days of rations, a plastic bottle, and 50 feet of hempen rope.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">12</set>
+			<set name="weight" lb="0">0 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB_ITEM_BACKPACK</item>
+			<item>ID_WOTC_PHB_ITEM_CROWBAR</item>
+			<item>ID_WOTC_PHB_ITEM_HAMMER</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_PITON</item>
+			<item amount="10">ID_DCAD_MH_ITEM_LIGHT_STICK</item>
+			<item>ID_DCAD_MH_ITEM_MULTI_TOOL_POCKETKNIFE</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_RATIONS_1DAY</item>
+			<item>ID_DCAD_MH_ITEM_PLASTIC_BOTTLE</item>
+			<item>ID_WOTC_PHB_ITEM_ROPE_HEMPEN_50FEET</item>
+		</extract>
+	</element>
+	<element name="Modern Entertainer's Pack" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_MODERN_ENTERTAINERS_PACK">
+		<description>
+			<p><i>This is a revised version of the Entertainer's Pack for modern settings</i></p>
+			<p class="indent">Includes a backpack, a crowbar, a hammer, 10 pitons, 10 light sticks, a multi-tool pocketknife, 10 days of rations, a plastic bottle, and 50 feet of hempen rope.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="0">0 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB_ITEM_BACKPACK</item>
+			<item>ID_WOTC_PHB_ITEM_CROWBAR</item>
+			<item>ID_WOTC_PHB_ITEM_HAMMER</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_PITON</item>
+			<item amount="10">ID_DCAD_MH_ITEM_LIGHT_STICK</item>
+			<item>ID_DCAD_MH_ITEM_MULTI_TOOL_POCKETKNIFE</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_RATIONS_1DAY</item>
+			<item>ID_DCAD_MH_ITEM_PLASTIC_BOTTLE</item>
+			<item>ID_WOTC_PHB_ITEM_ROPE_HEMPEN_50FEET</item>
+		</extract>
+	</element>
+	<element name="Modern Explorer's Pack" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_MODERN_EXPLORERS_PACK">
+		<description>
+			<p><i>This is a revised version of the Explorer's Pack for modern settings</i></p>
+			<p class="indent">Includes a backpack, a sleeping, a mess kit, a tinderbox, 10 light sticks, 10 days of rations, a plastic bottle, and 50 feet of hempen rope.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0">0 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB_ITEM_BACKPACK</item>
+			<item>ID_DCAD_MH_ITEM_SLEEPING_BAG</item>
+			<item>ID_WOTC_PHB_ITEM_MESSKIT</item>
+			<item>ID_WOTC_PHB_ITEM_TINDERBOX</item>
+			<item amount="10">ID_DCAD_MH_ITEM_LIGHT_STICK</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_RATIONS_1DAY</item>
+			<item>ID_DCAD_MH_ITEM_PLASTIC_BOTTLE</item>
+			<item>ID_WOTC_PHB_ITEM_ROPE_HEMPEN_50FEET</item>
+		</extract>
+	</element>
+	<element name="Modern Priest's Pack" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_MODERN_PRIESTS_PACK">
+		<description>
+			<p><i>This is a revised version of the Priest's Pack for modern settings</i></p>
+			<p class="indent">Includes a backpack, a blanket, 10 candles, a lighter, an alms box, 2 blocks of incense, a censer, vestments, 2 days of rations, and a plastic bottle.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">19</set>
+			<set name="weight" lb="0">0 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB_ITEM_BACKPACK</item>
+			<item>ID_WOTC_PHB_ITEM_BLANKET</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_CANDLE</item>
+			<item>ID_DCAD_MH_ITEM_LIGHTER</item>
+			<item amount="2">ID_WOTC_PHB_ITEM_RATIONS_1DAY</item>
+			<item>ID_DCAD_MH_ITEM_PLASTIC_BOTTLE</item>
+		</extract>
+	</element>
+	<element name="Modern Scholar's Pack" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_MODERN_Scholar_PACK">
+		<description>
+			<p><i>This is a revised version of the Scholar's Pack for modern settings</i></p>
+			<p class="indent">Includes a backpack, a book of lore, a 100-page book, a pen, 10 sheets of parchment, a fanny bag (handbag), and a small knife.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">19</set>
+			<set name="weight" lb="0">0 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB_ITEM_BACKPACK</item>
+			<item>ID_DCAD_MH_ITEM_BOOK_300PAGES</item>
+			<item>ID_DCAD_MH_ITEM_BOOK_100PAGES</item>
+			<item>ID_DCAD_MH_ITEM_PEN</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_PAPER_ONESHEET</item>
+			<item>ID_DCAD_MH_ITEM_HANDBAG</item>
+		</extract>
+	</element>
+</elements>

@@ -1,0 +1,1831 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-weapons.xml" />
+		</update>
+	</info>
+
+	<element name="Firearms Damage Variant" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT">
+		<description>
+			<p><i>Variant Optional Rule</i></p>
+			<p>f you think firearms does too much damage, you can reduce the damage to 1 dice instead of 2.</p>
+		</description>
+	</element>
+	
+	<!--Simple Melee-->
+
+	<element name="Baton, Expandable" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_BATON_EXPANDABLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_BATON_EXPANDABLE, ID_DCAD_MH_WEAPON_GROUP_BATONS</supports>
+		<description>
+			<div element="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_BATON_EXPANDABLE" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">12</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_EXPANDABLE</set>
+		</setters>
+	</element>
+
+	<element name="Baton, Metal" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_BATON_METAL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_GROUP_BATONS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_METAL</set>
+		</setters>
+	</element>
+
+	<element name="Baton, Stun" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_BATON_STUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_BATON_STUN, ID_DCAD_MH_WEAPON_GROUP_BATONS</supports>
+		<description>
+			<div element="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_BATON_STUN" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="lightning">1d4</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_STUN</set>
+		</setters>
+	</element>
+
+	<element name="Brass Knuckles" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_BRASS_KNUCKLES">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_BRASS_KNUCKLES</set>
+		</setters>
+	</element>
+
+	<element name="Firefighter Axe" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_FIREFIGHTER_AXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_FIREFIGHTER_AXE</set>
+		</setters>
+	</element>
+
+	<element name="Ketch-All Pole" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_KETCH_ALL_POLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_KETCH_ALL_POLE</supports>
+		<description>
+			<div element="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_KETCH_ALL_POLE" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_KETCH_ALL_POLE</set>
+		</setters>
+	</element>
+
+	<element name="Machete" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_MACHETE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_MACHETE</set>
+		</setters>
+	</element>
+
+	<element name="Pocket Knife" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_POCKET_KNIFE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_DCAD_MH_WEAPON_GROUP_KNIVES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_POCKET_KNIFE</set>
+		</setters>
+	</element>
+
+	<element name="Spiked Bat" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_SPIKED_BAT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">6</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="versatile">1d8</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_SPIKED_BAT</set>
+		</setters>
+	</element>
+
+	<element name="Survival Knife" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_SURVIVAL_KNIFE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_SURVIVAL_KNIFE, ID_DCAD_MH_WEAPON_GROUP_KNIVES</supports>
+		<description>
+			<div element="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_SURVIVAL_KNIFE" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_SURVIVAL_KNIFE</set>
+		</setters>
+	</element>
+
+	<!--Simple Ranged-->
+
+	<element name="Dart Gun" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_DART_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_1, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_DART_GUN</supports>
+		<description>
+			<div element="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_DART_GUN" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">40/120</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_DART_GUN</set>
+		</setters>
+	</element>
+
+	<element name="Pistol, Light" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PISTOL_LIGHT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_12, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">60/180</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_LIGHT</set>
+		</setters>
+	</element>
+	<element name="Pistol, Light (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PISTOL_LIGHT_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_12, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="range">60/180</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_LIGHT</set>
+		</setters>
+	</element>
+
+	<element name="Pistol, Pocket" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PISTOL_POCKET">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_12, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">2d4</set>
+			<set name="range">20/60</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_POCKET</set>
+		</setters>
+	</element>
+	<element name="Pistol, Pocket (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PISTOL_POCKET_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_12, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="range">20/60</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_POCKET</set>
+		</setters>
+	</element>
+
+	<element name="Revolver" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_REVOLVER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_SLOW_RELOAD_6, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="range">50/150</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_REVOLVER</set>
+		</setters>
+	</element>
+	<element name="Revolver (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_REVOLVER_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_SLOW_RELOAD_6, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="range">50/150</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_REVOLVER</set>
+		</setters>
+	</element>
+
+	<element name="Rifle, Hunting" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_RIFLE_HUNTING">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_1, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_RIFLES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">2d10</set>
+			<set name="range">180/540</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_HUNTING</set>
+		</setters>
+	</element>
+	<element name="Rifle, Hunting (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_RIFLE_HUNTING_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_1, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_RIFLES</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="range">180/540</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_HUNTING</set>
+		</setters>
+	</element>
+
+	<element name="Shotgun, Double-Barrel" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_SHOTGUN_DOUBLE_BARREL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_CQB, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_2, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_SHOTGUNS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="range">30/90</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_DOUBLE_BARREL</set>
+		</setters>
+	</element>
+	<element name="Shotgun, Double-Barrel (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_SHOTGUN_DOUBLE_BARREL_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_CQB, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_2, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_SHOTGUNS</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="range">30/90</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_DOUBLE_BARREL</set>
+		</setters>
+	</element>
+
+	<element name="Taser Gun" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_TASER_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_TASER_GUN</supports>
+		<description>
+			<div element="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_TASER_GUN" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">15/35</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_TASER_GUN</set>
+		</setters>
+	</element>
+
+	<!--Martial Melee-->
+
+	<element name="Chain" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_CHAIN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_CHAIN</set>
+		</setters>
+	</element>
+
+	<element name="Chainsaw" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_CHAINSAW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d12</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_CHAINSAW</set>
+		</setters>
+	</element>
+
+	<element name="Sledgehammer" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_SLEDGEHAMMER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_HAMMERS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">1d10</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_SLEDGEHAMMER</set>
+		</setters>
+	</element>
+
+	<element name="Tactical Tomahawk" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_SURVIVAL_KNIFE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_TACTICAL_TOMAHAWK</set>
+		</setters>
+	</element>
+
+	<!--Martial Ranged-->
+
+	<element name="Grenade Launcher" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_GRENADE_LAUNCHER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_6, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_GRENADE_LAUNCHER</supports>
+		<description>
+			<div element="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_GRENADE_LAUNCHER" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_GRENADE_LAUNCHER</set>
+		</setters>
+	</element>
+
+	<element name="Light Machinegun" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_LIGHT_MACHINE_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_AUTOFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_DCAD_MH_WEAPON_PROPERTY_SLOW_RELOAD_120, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_MACHINE_GUNS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">2d10</set>
+			<set name="range">150/450</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_LIGHT_MACHINE_GUN</set>
+		</setters>
+	</element>
+	<element name="Light Machinegun (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_LIGHT_MACHINE_GUN_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_AUTOFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_DCAD_MH_WEAPON_PROPERTY_SLOW_RELOAD_120, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_MACHINE_GUNS</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="range">150/450</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_LIGHT_MACHINE_GUN</set>
+		</setters>
+	</element>
+
+	<element name="Machine Pistol" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_MACHINE_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_BURST_FIRE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_20, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">60/180</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_MACHINE_PISTOL</set>
+		</setters>
+	</element>
+	<element name="Machine Pistol (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_MACHINE_PISTOL_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_BURST_FIRE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_20, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="range">60/180</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_MACHINE_PISTOL</set>
+		</setters>
+	</element>
+
+	<element name="Pistol, Heavy" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PISTOL_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_7, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="range">60/180</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_HEAVY</set>
+		</setters>
+	</element>
+	<element name="Pistol, Heavy (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PISTOL_HEAVY_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_7, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="range">60/180</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_HEAVY</set>
+		</setters>
+	</element>
+
+	<element name="Rifle, Sniper" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_RIFLE_SNIPER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_8, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_RIFLES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">650</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">2d10</set>
+			<set name="range">180/540</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_SNIPER</set>
+		</setters>
+	</element>
+	<element name="Rifle, Sniper (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_RIFLE_SNIPER_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_8, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_RIFLES</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">650</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="range">180/540</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_SNIPER</set>
+		</setters>
+	</element>
+	
+	<element name="Rifle, Assault" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_RIFLE_ASSAULT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_BURST_FIRE, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_30, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_RIFLES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">600</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="range">100/300</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_ASSAULT</set>
+		</setters>
+	</element>
+	<element name="Rifle, Assault (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_RIFLE_ASSAULT_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_BURST_FIRE, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_30, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_RIFLES</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">600</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="range">100/300</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_ASSAULT</set>
+		</setters>
+	</element>
+
+	<element name="Shotgun, Tactical" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_SHOTGUN_TACTICAL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_CQB, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_6, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_SHOTGUNS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">550</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="range">30/90</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_TACTICAL</set>
+		</setters>
+	</element>
+	<element name="Shotgun, Tactical (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_SHOTGUN_TACTICAL_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_CQB, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_6, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_SHOTGUNS</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">550</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="range">30/90</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_TACTICAL</set>
+		</setters>
+	</element>
+
+	<element name="Submachine Gun" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_SUBMACHINE_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_BURST_FIRE, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_30, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_MACHINE_GUNS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="range">80/240</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_SUBMACHINE_GUN</set>
+		</setters>
+	</element>
+	<element name="Submachine Gun (Variant)" type="Weapon" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_SUBMACHINE_GUN_VARIANT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_BURST_FIRE, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_30, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_MACHINE_GUNS</supports>
+		<description>
+			<div element="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="range">80/240</set>
+			<set name="proficiency">ID_DCAD_MH_WEAPON_PROFICIENCY_SUBMACHINE_GUN</set>
+		</setters>
+	</element>
+
+	<!--Explosives-->
+
+	<element name="Flashbang" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FLASHBANG">
+		<description>
+			<p>A flashbang is a non-lethal explosive device used to temporarily disorient an enemy's senses. It is designed to produce a blinding flash of light and an intensely loud "bang" without causing permanent injury.</p>
+			<p class="indent"><b><i>Grenade.</i></b> As an action, a character can throw a flashbang at a point. Each creature within 20 feet of the point must make a Dexterity saving throw or be blinded and deafened until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Fragmentation" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FRAGMENTATION">
+		<description>
+			<p>These explosives are designed to disperse lethal fragments on detonation. The body is generally made of a hard synthetic material or steel, which will provide some fragmentation as shards and splinters.</p>
+			<p class="indent"><b><i>Grenade.</i></b> As an action, a character can throw a grenade at a point. Each creature within 20 feet of the point must make a Dexterity saving throw, taking 4d6 piercing damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent"><b><i>Planted.</i></b> When it's activated, each creature within 20 feet of the point must make a Dexterity saving throw, taking 4d6 piercing damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Incendiary" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_INCENDIARY">
+		<description>
+			<p>Incendiary devices produce intense heat by means of a chemical reaction.</p>
+			<p class="indent"><b><i>Grenade.</i></b> As an action, a character can throw a grenade at a point. Each creature within 10 feet of the point must make a Dexterity saving throw, taking 1d6 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for 1 minute. The burning target sheds bright light in a 10-foot radius and dim light for an additional 10 feet. At the beginning of each of its turns, the target takes 1d6 fire damage, and it can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Plastic Explosive" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PLASTIC_EXPLOSIVE">
+		<description>
+			<p>Plastic explosive is a soft and hand-moldable solid form of explosive material. Plastic explosives are especially suited for explosive demolition of obstacles and fortifications by engineers, combat engineers and criminals. It can be cut, formed, wrapped, and combined with others of its type.</p>
+			<p class="indent"><b><i>Planted.</i></b> Each creature within 5 feet of the explosive must make a Dexterity saving throw, taking 3d6 force damage on a failed save, or half as much damage on a successful one. It deals double damage against objects and structures.</p>
+			<p class="indent">You can combine units of plastic explosive so they explode at the same time. Each additional pound of plastic explosive increases the damage by 1d6 (to a maximum of 10d6) and the burst radius by 5 feet (to a maximum of 20 feet).</p>
+			<p class="indent">In addition, when you combine two or more units, you can change the burst radius to a cone-shaped explosion (you must choose the direction of the cone when you plant it).</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Smoke" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SMOKE">
+		<description>
+			<p>Smoke grenades are used as ground-to-ground or ground-to-air signaling devices, target or landing zone marking devices, and to create a smoke-screen for concealment. When buying a smoke grenade you can also choose the color of the smoke.</p>
+			<p class="indent"><b><i>Grenade.</i></b> As an action, a character can throw a smoke grenade at a point. One round after the grenade lands, it emits a cloud of smoke that creates a heavily obscured area in a 20-foot radius. It disperses after 1 minute, though a moderate wind (at least 10 miles per hour) disperses the smoke in 4 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Tear Gas" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TEAR_GAS">
+		<description>
+			<p>Tear gas works by irritating mucous membranes in the eyes, nose, mouth and lungs, and causes crying, sneezing, coughing, difficulty breathing, pain in the eyes, and temporary blindness.</p>
+			<p class="indent"><b><i>Grenade.</i></b> As an action, a character can throw a smoke grenade at a point. One round after the grenade lands, it emits a cloud of tear gas that creates a heavily obscured area in a 20-foot radius. It disperses after 1 minute, though a moderate wind (at least 10 miles per hour) disperses the smoke in 4 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round.</p>
+			<p class="indent">Any creature starting its turn in the gas is considered blinded and it must make a Constitution saving throw or be incapacitated (DC 15). A creature wearing a gas mask automatically succeeds the saving throw.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Thermite" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_THERMITE">
+		<description>
+			<p>Thermite does not technically explode. Instead, it creates intense heat meant to burn or melt through an object upon which the thermite is set.</p>
+			<p class="indent"><b><i>Planted.</i></b> Each creature that ends its turn in the same space of the thermite must make a Dexterity saving throw, taking 6d6 fire damage on a failed save, or half as much damage on a successful one. It last for 1 minute and it provides bright light for a 5-foot radius and dim light for an additional 5 feet while burning. It deals double damage against objects and structures.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Thermobaric" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_THERMOBARIC">
+		<description>
+			<p>A thermobaric weapon is a type of explosive that uses oxygen from the surrounding air to generate a high-temperature explosion.</p>
+			<p class="indent"><b><i>Planted.</i></b> When it's activated, each creature within 30 feet of the point must make a Dexterity saving throw, taking 4d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="White Phosphorus" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_WHITE_PHOSPHORUS">
+		<description>
+			<p>A thermobaric weapon is a type of explosive that uses oxygen from the surrounding air to generate a high-temperature explosion.</p>
+			<p class="indent"><b><i>Planted.</i></b> When it's activated, each creature within 30 feet of the point must make a Dexterity saving throw, taking 4d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!--Detonators-->
+
+	<element name="Improvised Detonator" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_IMPROVISED_DETONATOR">
+		<description>
+			<p>An improvised detonator is a low-quality detonator created from spare parts and the remains of other detonators. They generally work, but they are also easier to disable due their materials. These detonators cost half of the price of a normal detonator, and any explosive device with an improvised detonator have a 20% chance to fail when triggered.</p>
+		</description>
+		<setters>
+			<set name="category">Detonators</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Remote Detonator, Radio" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_REMOTE_DETONATOR_RADIO">
+		<description>
+			<p>As an action, you can detonate the explosive remotely if you are within 3,000 feet from it.</p>
+		</description>
+		<setters>
+			<set name="category">Detonators</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Remote Detonator, Wired" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_REMOTE_DETONATOR_WIRED">
+		<description>
+			<p>As an action, you can detonate the explosive remotely if you are within 1,000 feet from it. This detonator includes a detonating cord.</p>
+		</description>
+		<setters>
+			<set name="category">Detonators</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="20">20 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Timed" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TIMED">
+		<description>
+			<p>When planting the explosive with a timer, you must determine the number of rounds or minutes for the countdown, up to 1 hour. When the countdown ends, the explosive is detonated.</p>
+		</description>
+		<setters>
+			<set name="category">Detonators</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Trigger, Pressure" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TRIGGER_PRESSURE">
+		<description>
+			<p>A planted explosive with a pressure trigger will explode when a creature stands on the detonator.</p>
+		</description>
+		<setters>
+			<set name="category">Detonators</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Trigger, Proximity" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TRIGGER_PROXIMITY">
+		<description>
+			<p>When your arm a planted explosive with a proximity trigger detonator, it explodes when a creature moves in the burst area. When planting the explosive, you can reduce the detection radius to a minimum of 5 feet of the explosive.</p>
+		</description>
+		<setters>
+			<set name="category">Detonators</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Trigger, Trip" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TRIGGER_TRIP">
+		<description>
+			<p>The explosive is connected to a 20 feet trip wire, and when a creature pass through the wire, the explosive detonates. A creature can make a Wisdom (Perception) check to detect the wire (DC 12).</p>
+		</description>
+		<setters>
+			<set name="category">Detonators</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<!--Firearm Accessories-->
+
+	<element name="Combined Module" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_COMBINED_MODULE">
+		<description>
+			<p>The Combined Module is a multifunctional gadget that combines a laser sight and a tactical flashlight. You can use a bonus action to toggle between the laser sight and the tactical flashlight. You can also use a bonus action to turn it off.</p>
+			<p class="indent">While you have the laser sight on, you gain a +1 bonus on attack rolls with that firearm.</p>
+			<p class="indent">While you have the tactical flashlight on, the light illuminates a 40-foot cone and dim light for an additional 40 feet.</p>
+			<p class="indent"><i>Weapon compatibility: Pistols, rifles, shotguns and submachine guns. You cannot add it to a weapon that already has a laser sight or a tactical flashlight.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">550</set>
+			<set name="weight" lb="1">1 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Concealed Holster" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_CONCEALED_HOLSTER">
+		<description>
+			<p>A concealed holster is designed to help keep a weapon out of sight. In most cases, this is a shoulder holster or a waistband holster. While the weapon remains in the holster, it gains the covert property. A character can carry up to three concealed holsters (two shoulder holsters and one waistband holster).</p>
+			<p class="indent"><i>Weapon compatibility: Dart guns, pistols, revolvers and Taser guns.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Deployable Bipod" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_DEPLOYABLE_BIPOD">
+		<description>
+			<p>Bipods are commonly used on weapons to provide a forward rest and reduce motion. They are also seen on other long-barreled weapons, such as sniper rifles. Bipods permit operators to easily rest a weapon on objects, like the ground or a wall, reducing their fatigue and increasing accuracy and stability.</p>
+			<p class="indent">You must use your action to deploy or retract the bipod. While you have the bipod deployed, you gain advantage when shooting over 100 feet. To deploy a bipod you must be prone or in a stable shooting position. If you have the bipod deployed and shooting from the hip, you have disadvantage on the attack rolls.</p>
+			<p class="indent"><i>Weapon compatibility: Rifles.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="1">1 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Laser Sight" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_LASER_SIGHT">
+		<description>
+			<p>This gadget is a small laser placed on a handgun or a rifle and aligned to emit a visible beam parallel to the barrel to assist in shooting. The laser color can be red or green.</p>
+			<p class="indent">While you have the laser sight on, you gain a +1 bonus on attack rolls with that firearm. You can use a bonus action to turn the laser on or off.</p>
+			<p class="indent"><i>Weapon compatibility: Pistols, rifles, shotguns and submachine guns. You cannot add it to a weapon that already has a combined module or a tactical flashlight.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Laser Sight, Infrared" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_LASER_SIGHT_INFRARED">
+		<description>
+			<p>This laser sight uses an infrared diode to produce a dot invisible to the eye but detectable with infrared devices.</p>
+			<p class="indent">While you have the laser sight on, you gain a +1 bonus on attack rolls with that firearm if you are wearing infrared goggles. You can use a bonus action to turn the laser on or off.</p>
+			<p class="indent"><i>Weapon compatibility: Pistols, rifles, shotguns and submachine guns. You cannot add it to a weapon that already has a combined module or a tactical flashlight.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">600</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Speed Loader" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_SPEED_LOADER">
+		<description>
+			<p>A speed loader holds 6 bullets in a ring in a position that mirrors the chambers in a revolver cylinder, allowing the character to insert all bullets at once. Using a speed loader you can reload a revolver using a bonus action. You can use an action to put 6 bullets in an empty speed loader for future uses.</p>
+			<p class="indent"><i>Weapon compatibility: Revolvers.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Scope (×2)" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_SCOPE_X2">
+		<description>
+			<p>Scopes are used to increase the normal range of a weapon, allowing the user to shoot farther without having disadvantage on targeting. Depending on the scope you add to the weapon, you increase the normal range in a specific amount, as shown on the following table.</p>
+			<div element="ID_DCAD_MH_INFORMATION_SCOPE_INCREMENTS" />
+			<p class="indent"><i>Weapon compatibility: light machineguns, rifles, shotguns (×2 only) and submachine guns (×2 only). You can only add one scope to a weapon.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Scope (×4)" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_SCOPE_X4">
+		<description>
+			<p>Scopes are used to increase the normal range of a weapon, allowing the user to shoot farther without having disadvantage on targeting. Depending on the scope you add to the weapon, you increase the normal range in a specific amount, as shown on the following table.</p>
+			<div element="ID_DCAD_MH_INFORMATION_SCOPE_INCREMENTS" />
+			<p class="indent"><i>Weapon compatibility: light machineguns, rifles, shotguns (×2 only) and submachine guns (×2 only). You can only add one scope to a weapon.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Scope (×8)" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_SCOPE_X8">
+		<description>
+			<p>Scopes are used to increase the normal range of a weapon, allowing the user to shoot farther without having disadvantage on targeting. Depending on the scope you add to the weapon, you increase the normal range in a specific amount, as shown on the following table.</p>
+			<div element="ID_DCAD_MH_INFORMATION_SCOPE_INCREMENTS" />
+			<p class="indent"><i>Weapon compatibility: light machineguns, rifles, shotguns (×2 only) and submachine guns (×2 only). You can only add one scope to a weapon.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Scope, Thermal (×2)" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_SCOPE_THERMAL_X2">
+		<description>
+			<p>The thermal scope is a sighting device combining a compact thermographic camera and an aiming reticle. It creates a visual based on the temperature, allowing you to easily identificate it, such as a creature. This allows the user to target any heat source (creature or object) without disadvantage caused by darkness.</p>
+			<p class="indent"><i>Weapon compatibility: light machineguns, rifles, shotguns (x2 only) and submachine guns (x2 only). You can only add one scope to a weapon.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">900</set>
+			<set name="weight" lb="2">2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Scope, Thermal (×4)" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_SCOPE_THERMAL_X4">
+		<description>
+			<p>The thermal scope is a sighting device combining a compact thermographic camera and an aiming reticle. It creates a visual based on the temperature, allowing you to easily identificate it, such as a creature. This allows the user to target any heat source (creature or object) without disadvantage caused by darkness.</p>
+			<p class="indent"><i>Weapon compatibility: light machineguns, rifles, shotguns (x2 only) and submachine guns (x2 only). You can only add one scope to a weapon.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="2">2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Scope, Thermal (×8)" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_SCOPE_THERMAL_X8">
+		<description>
+			<p>The thermal scope is a sighting device combining a compact thermographic camera and an aiming reticle. It creates a visual based on the temperature, allowing you to easily identificate it, such as a creature. This allows the user to target any heat source (creature or object) without disadvantage caused by darkness.</p>
+			<p class="indent"><i>Weapon compatibility: light machineguns, rifles, shotguns (x2 only) and submachine guns (x2 only). You can only add one scope to a weapon.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">1200</set>
+			<set name="weight" lb="2">2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Suppressor" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_SUPPRESSOR">
+		<description>
+			<p>A suppressor is a device attached to or part of the barrel of a firearm which reduces (but don't negate) the amount of noise and visible muzzle flash generated by firing.</p>
+			<p class="indent">When you make a ranged attack with a suppressed weapon, you don't automatically reveal your location while hiding. Any creature within 20 feet from the weapon can still hear the gunshot, but not necessarily where it's originated. You can use your action to add or remove th|e suppressor from the weapon.</p>
+			<p class="indent"><i>Weapon compatibility: Pistols, rifles, shotguns and submachine guns.</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="1">1 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Tactical Flashlight" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIREARM_ACCESSORY_TACTICAL_FLASHLIGHT">
+		<description>
+			<p>While you have the tactical flashlight on, the light illuminates a 40-foot cone and dim light for an additional 40 feet. You can use a bonus action to turn the flashlight on or off.</p>
+			<p class="indent"><i>Weapon compatibility: Pistols, rifles, shotguns and submachine guns. You cannot add it to a weapon that already has a combined module or a laser sight (normal or infrared).</i></p>
+		</description>
+		<setters>
+			<set name="category">Firearm Accessories</set>
+			<set name="keywords"></set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+		</setters>
+	</element>
+
+	<!--Ammunition-->
+
+	<element name="Pistol Bullet" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_PISTOL_BULLET">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.025">1/40 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Rifle Bullet" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_RIFLE_BULLET">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">15</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Shotgun Shell" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SHOTGUN_SHELL">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">15</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Light Machinegun Bullet" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_LIGHT_MACHINEGUN_BULLET">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!--Special Ammunition-->
+
+	<element name="Acid Ammunition" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_ACID_AMMUNITION">
+		<description>
+			<p>Each of these projectiles carries a load of some chemical (or alchemical) material inside, such as magnesium (fire) or ultraviolet fluid (holy). When it hits a target, the projectile shatters, releasing the material directly onto the target. When you hit a creature with an acid, cold or fire ammunition, you deal an extra 1d4 damage. The damage type depends on the type of the ammunition.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Breaching Shotgun Shell" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_BREACHING_SHOTGUN_SHELL">
+		<description>
+			<p>These rounds are designed to destroy door deadbolts, locks, and hinges without risking lives by ricocheting or by flying on at lethal speed through the door, as traditional buckshot can. Each one of this shells deals double damage to doors.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">65</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Cold Ammunition" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_COLD_AMMUNITION">
+		<description>
+			<p>Each of these projectiles carries a load of some chemical (or alchemical) material inside, such as magnesium (fire) or ultraviolet fluid (holy). When it hits a target, the projectile shatters, releasing the material directly onto the target. When you hit a creature with an acid, cold or fire ammunition, you deal an extra 1d4 damage. The damage type depends on the type of the ammunition.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Fire Ammunition" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_FIRE_AMMUNITION">
+		<description>
+			<p>Each of these projectiles carries a load of some chemical (or alchemical) material inside, such as magnesium (fire) or ultraviolet fluid (holy). When it hits a target, the projectile shatters, releasing the material directly onto the target. When you hit a creature with an acid, cold or fire ammunition, you deal an extra 1d4 damage. The damage type depends on the type of the ammunition.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Holy Ammunition" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_HOLY_AMMUNITION">
+		<description>
+			<p>Each of these projectiles carries a load of some chemical (or alchemical) material inside, such as magnesium (fire) or ultraviolet fluid (holy). When it hits a target, the projectile shatters, releasing the material directly onto the target. When you hit a creature with an acid, cold or fire ammunition, you deal an extra 1d4 damage. The damage type depends on the type of the ammunition.</p>
+			<p class="indent">When you hit a fiend or undead creature with a holy ammunition you deal an extra 1d6 radiant damage instead.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Silvered Ammunition" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_SILVERED_AMMUNITION">
+		<description>
+			<p>Silvered Ammunition. This ammunition consist on standard bullets plated on silver, which are mostly used against creatures that are susceptible to silver weapons. Each round follows the rules of silvered weapons detailed in the chapter 5 of the <i>Player's Handbook</i>.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="XREP Shotgun Shell" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_XREP_SHOTGUN_SHELL">
+		<description>
+			<p>XREP shotgun shells are a long-range wireless electro-shock projectiles. When a creature is hit by a XREP shell, it takes lightning damage instead of piercing damage, and the target must make a DC 15 Constitution saving throw or be paralyzed until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">515</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<!--Weapon Properties-->
+	<element name="Autofire" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_AUTOFIRE">
+		<description>
+			<p>A weapon that has the autofire property can only spray in a 10-foot-cube area within range by using 10 pieces of ammunition. Each creature in the area you can see must make a Dexterity saving throw, taking the weapon's normal damage on a failed save. The DC equals to 8 + your proficiency bonus (if proficient with the weapon) + your Dexterity modifier. Any targets within long range have advantage on this roll.</p>
+		</description>
+	</element>
+
+	<element name="Burst Fire" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_BURST_FIRE">
+		<description>
+			<p>A weapon that has the burst fire property can make a normal single-target attack, or it can spray a 10-foot-cube area within normal range by using 10 pieces of ammunition. Each creature in the area you can see must make a Dexterity saving throw, taking the weapon's normal damage on a failed save. The DC equals to 8 + your proficiency bonus (if proficient with the weapon) + your Dexterity modifier.</p>
+		</description>
+	</element>
+
+	<element name="Covert" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_COVERT">
+		<description>
+			<p>You have advantage on Dexterity (Sleight of Hand) checks to conceal this weapon.</p>
+		</description>
+	</element>
+
+	<element name="CQB" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_CQB">
+		<description>
+			<p>If you hit a creature within 15 feet or less from you, you can add an extra die to the damage roll.</p>
+		</description>
+	</element>
+
+	<element name="Reload 1" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_1">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+
+	<element name="Reload 2" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_2">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+
+	<element name="Reload 6" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_6">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+
+	<element name="Reload 7" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_7">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+
+	<element name="Reload 8" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_8">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+
+	<element name="Reload 12" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_12">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+
+	<element name="Reload 30" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_30">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+
+	<element name="Slow Reload 6" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_SLOW_RELOAD_6">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the slow reload property. A character must then reload it using an action.</p>
+		</description>
+	</element>
+	
+	<element name="Slow Reload 120" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_SLOW_RELOAD_120">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the slow reload property. A character must then reload it using an action.</p>
+		</description>
+	</element>
+
+	<!--Special Properties-->
+
+	<element name="Special (Baton, Expandable)" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_BATON_EXPANDABLE">
+		<description>
+			<p>This weapon can be collapsed to reduce its size and increase its concealability. A collapsed baton can't be used as a weapon but it gives the covert property. Extending or collapsing the baton is a free action.</p>
+		</description>
+	</element>
+
+	<element name="Special (Baton, Stun)" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_BATON_STUN">
+		<description>
+			<p>A stun baton has 5 charges. When you hit a creature with a stun baton, you can expend one charge. The target must make a Constitution saving throw (DC 10) or be paralyzed until the start of your next turn. The stun baton must be recharged using one battery after expending the last charge.</p>
+		</description>
+	</element>
+
+	<element name="Special (Dart Gun)" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_DART_GUN">
+		<description>
+			<p>This air-dart gun fires a needle via an air compressor. The needle itself inflicts no damage, but it can deliver an injection with any poison to the target. Each dart cost $0,5, and a vial of poison can coat three darts. You can read more about poisons in the chapter 8 of the <i>Dungeon Master's Guide</i>.</p>
+		</description>
+	</element>
+
+	<element name="Special (Grenade Launcher)" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_GRENADE_LAUNCHER">
+		<description>
+			<p>This weapon allows you to propel a fragmentation, smoke or tear gas grenade up to 120 feet away. You can target a creature instead using a grenade launcher. On a hit you deal 1d6 bludgeoning damage to that creature, and then the grenade effect occurs.</p>
+		</description>
+	</element>
+
+	<element name="Special (Ketch-All Pole)" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_KETCH_ALL_POLE">
+		<description>
+			<p>A Large or smaller creature hit by a Ketch-All pole is restrained until it is freed. A Ketch-All pole has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success.</p>
+			<p class="indent">When you use an action, bonus action, or reaction to attack with a Ketch-All pole, you can make only one attack regardless of the number of attacks you can normally make.</p>
+		</description>
+	</element>
+
+	<element name="Special (Survival Knife)" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_SURVIVAL_KNIFE">
+		<description>
+			<p>A survival knife comes with a small compass attached to the handle or pommel, and a hollow handle, which allows storing small items, such as some waterproof matches, a fishing string, or a piece of paper.</p>
+		</description>
+	</element>
+
+	<element name="Special (Taser Gun)" type="Weapon Property" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_TASER_GUN">
+		<description>
+			<p>A taser fires two small barbed darts intended to puncture the skin and remain attached to the target, then it applies a high-voltage, but low-current electrical charge. When you hit a creature, it takes 1d4 lightning damage and it must make a Constitution saving throw (DC 15) or be paralyzed until the end of your next turn. While the target is within range, on each of your turns for the next 4 rounds you can use your action to deal 1d4 lightning damage and maintain the target paralyzed. You can only have one creature under the taser effects, and on each of its turns it can use an action to make a Constitution check. On a success, it removes the darts and is no longer paralyzed.</p>
+			<p class="indent">A Taser must be recharged using a battery after five shots.</p>
+		</description>
+	</element>
+
+	<!--Proficiencies-->
+
+	<element name="Weapon Proficiency (Baton, Expandable)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_EXPANDABLE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_BATON_EXPANDABLE, ID_DCAD_MH_WEAPON_GROUP_BATONS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Baton, Metal)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_METAL">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_GROUP_BATONS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Baton, Stun)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_STUN">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_BATON_STUN, ID_DCAD_MH_WEAPON_GROUP_BATONS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Brass Knuckles)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BRASS_KNUCKLES">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Firefighter Axe)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_FIREFIGHTER_AXE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Ketch-All Pole)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_KETCH_ALL_POLE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_KETCH_ALL_POLE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Machete)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_MACHETE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Pocket Knife)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_POCKET_KNIFE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_DCAD_MH_WEAPON_GROUP_KNIVES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Spiked Bat)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SPIKED_BAT">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Survival Knife)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SURVIVAL_KNIFE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_SURVIVAL_KNIFE, ID_DCAD_MH_WEAPON_GROUP_KNIVES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Dart Gun)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_DART_GUN">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_1, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_DART_GUN</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Pistol, Light)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_LIGHT">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_12, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Pistol, Pocket)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_POCKET">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_12, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_COVERT, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Revolver)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_REVOLVER">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_SLOW_RELOAD_6, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Rifle, Hunting)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_HUNTING">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_1, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_RIFLES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Shotgun, Double-Barrel)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_DOUBLE_BARREL">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_CQB, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_2, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_SHOTGUNS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Taser Gun)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_TASER_GUN">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_TASER_GUN</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Chain)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_CHAIN">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Chainsaw)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_CHAINSAW">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Sledgehammer)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SLEDGEHAMMER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_HAMMERS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Tactical Tomahawk)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_TACTICAL_TOMAHAWK">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Grenade Launcher)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_GRENADE_LAUNCHER">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_6, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_PROPERTY_SPECIAL_GRENADE_LAUNCHER</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Light Machinegun)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_LIGHT_MACHINEGUN">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_AUTOFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_DCAD_MH_WEAPON_PROPERTY_SLOW_RELOAD_120, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_MACHINE_GUNS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Machine Pistol)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_MACHINE_PISTOL">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_BURST_FIRE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_20, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Pistol, Heavy)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_HEAVY">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_7, ID_DCAD_MH_WEAPON_GROUP_PISTOLS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Rifle, Sniper)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_SNIPER">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_8, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_RIFLES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Rifle, Assault)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_ASSAULT">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_BURST_FIRE, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_30, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_RIFLES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Shotgun, Tactical)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_TACTICAL">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_CQB, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_6, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_SHOTGUNS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Submachine Gun)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SUBMACHINE_GUN">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_DCAD_MH_WEAPON_PROPERTY_BURST_FIRE, ID_DCAD_MH_WEAPON_PROPERTY_RELOAD_30, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_DCAD_MH_WEAPON_GROUP_MACHINE_GUNS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Explosive Devices)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_PROFICIENCY_EXPLOSIVE_DEVICES">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+	</element>
+
+	<!--Weapon Group-->
+
+	<element name="Weapon Group (Batons)" type="Weapon Group" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_GROUP_BATONS" />
+
+	<element name="Weapon Group (Knives)" type="Weapon Group" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_GROUP_KNIVES" />
+
+	<element name="Weapon Group (Pistols)" type="Weapon Group" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_GROUP_PISTOLS" />
+
+	<element name="Weapon Group (Rifles)" type="Weapon Group" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_GROUP_RIFLES" />
+
+	<element name="Weapon Group (Shotguns)" type="Weapon Group" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_GROUP_SHOTGUNS" />
+
+	<element name="Weapon Group (Machine Guns)" type="Weapon Group" source="Modern Handbook" id="ID_DCAD_MH_WEAPON_GROUP_MACHINE_GUNS" />
+	
+	<!--Appends-->
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_EXPANDABLE" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_DRUID">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_EXPANDABLE" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_SORCERER">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_EXPANDABLE" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_WIZARD">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_EXPANDABLE" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_METAL" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_DRUID">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_METAL" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_STUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_SORCERER">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_STUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_WIZARD">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BATON_STUN" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BRASS_KNUCKLES" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_SORCERER">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BRASS_KNUCKLES" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_WIZARD">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_BRASS_KNUCKLES" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_FIREFIGHTER_AXE" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_KETCH_ALL_POLE" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_MACHETE" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_POCKET_KNIFE" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_DRUID">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_POCKET_KNIFE" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_SORCERER">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_POCKET_KNIFE" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_WIZARD">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_POCKET_KNIFE" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SURVIVAL_KNIFE" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_DRUID">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SURVIVAL_KNIFE" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_DART_GUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_DRUID">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_DART_GUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_SORCERER">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_DART_GUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_WIZARD">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_DART_GUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_DART_GUN" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_LIGHT" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_SORCERER">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_LIGHT" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_WIZARD">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_LIGHT" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_LIGHT" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_POCKET" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_SORCERER">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_POCKET" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_WIZARD">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_POCKET" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_POCKET" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_REVOLVER" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_REVOLVER" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_HUNTING" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_HUNTING" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_DOUBLE_BARREL" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_DOUBLE_BARREL" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_TASER_GUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_DRUID">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_TASER_GUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_SORCERER">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_TASER_GUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_WIZARD">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_TASER_GUN" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_CHAIN" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_CHAINSAW" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SLEDGEHAMMER" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_TACTICAL_TOMAHAWK" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_ROGUE">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_TACTICAL_TOMAHAWK" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_GRENADE_LAUNCHER" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_GRENADE_LAUNCHER" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_LIGHT_MACHINEGUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_LIGHT_MACHINEGUN" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_MACHINE_PISTOL" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_MACHINE_PISTOL" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_HEAVY" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_BARD">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_HEAVY" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_ROGUE">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_HEAVY" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_HEAVY" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_SNIPER" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_SNIPER" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_ASSAULT" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_ASSAULT" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_TACTICAL" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_TACTICAL" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SUBMACHINE_GUN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SUBMACHINE_GUN" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_EXPLOSIVE_DEVICES" />
+		</rules>
+	</append>
+	
+</elements>

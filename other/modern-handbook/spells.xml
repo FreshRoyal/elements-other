@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/spells.xml" />
+		</update>
+	</info>
+	<element name="Arcane Graffiti" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_ARCANE_GRAFFITI">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>This spell allows you to inscribe your personal rune or a short message, which can be no larger than 2 feet tall and consist of no more than six words, on a nonliving creature or object. The writing can be visible or invisible. An arcane graffiti spell enables you to etch the words upon any substance (even stone or metal) without harming the material upon which the mark is placed. If invisible graffiti is made, the casting of any spell within 30 feet causes the words to become visible for 5 rounds.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">0</set>
+			<set name="school" addition="Technomancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Burglar's Buddy" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_BURGLARS_BUDDY">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>You create a magical area around you, suppressing all mechanical or electronic intrusion alarms and alarms sensors in the area. Burglar alarms or other intrusion alarms within the affected area simply fail to function; sensors for intrusion alarm systems (such as motion detectors, IR detectors, pressure sensors, electric eyes, and so forth) also fail to function, sending no signal to monitoring stations. Video surveillance devices stop sending whatever the image they were photographing the moment when the spell was cast.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">2</set>
+			<set name="school" addition="Technomancy">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self (15-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a camera lens cover</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dataread" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_DATAREAD">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>You run your finger over any machine-readable data source (a barcode, a computer disk, a USB drive, or any similar record) to understand the content of the data. You experience the data as it would normally be experienced through an appropriate machine. For example, if reading a USB with music, you hear the music in your head. If reading a word processor file, you visualize and read an image of the page. If reading a barcode, you see the serial number, pricing information, or other barcoded data.</p>
+			<p class="indent">The amount of time required to experience the data is the same as that required to read it by conventional means. You can normally read 2 pages of documents in 1 minute. This spell does not decode encrypted data. Without the encryption code, an encrypted document or file appears as a seemingly random string of characters. If you know the encryption code, however, you can read encrypted data normally with this spell.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for 10 minutes. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for 1 hour.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">2</set>
+			<set name="school" addition="Technomancy">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Degauss" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_DEGAUSS">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>By touching a single device that contains electronic files, such as a computer, external hard drive, USB flash drive, or magnetic disk, you erase all files on that device. The device is rendered empty of data.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">1</set>
+			<set name="school" addition="Technomancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Electromagnetic Pulse" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_ELECTROMAGNETIC_PULSE">
+	<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>When you cast this spell, you send a powerful burst of energy that ruins electronic circuitry in a 20-foot cube. Any computer, telephone, television, or other device with a computer processor inside ceases to function immediately, and the contents of hard drives and other storage media are scrambled.</p>
+			<p class="indent">The electromagnetic pulse affects only devices with extensive circuitry, not everything that uses electricity. Ordinarily the lights stay on, although their electronic switches might not function. Automobiles continue to run, although their engines will run more roughly without electronic guidance. Cars with an electronic ignition system won't start after the spell.</p>
+			<p class="indent">Devices affected by this spell can be fixed using an engineering kit.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">3</set>
+			<set name="school" addition="Technomancy">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Haywire" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_HAYWIRE">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>This cantrip causes a single device to behave randomly and erratically, defying any attempts to bring it under control. Cash registers display random prices and open their money drawers repeatedly. Escalators surge forward, then reverse themselves. Automatic teller machines flash random patrons' account balances on the screen as they spew forth receipts (not money, though).</p>
+			<p class="indent">It's impossible to describe the exact effects of haywire on every modern device. In general, a machine subject to haywire functions as if someone were pressing random buttons or otherwise manipulating it randomly.</p>
+			<p class="indent">Turning off a device subject to a haywire spell doesn't work, because the spell disables the "off" switch. Cutting off the power supply (by unplugging it, for example) disables the device 1d4 rounds later, ending the spell.</p>
+			<p class="indent">This cantrip doesn't disable the devices (for example, a camera might get a static effect but it will continue recording, and a door with an electronic lock might not be openable while is under the effects of this cantrip).</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">0</set>
+			<set name="school" addition="Technomancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small magnet</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Instant Connectivity" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_INSTANT_CONNECTIVITY">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>With the aid of instant messaging software, you physically transport the subject or subjects from one place to another. If several willing creatures link hands in a circle, up to eight creatures can be affected by the spell at the same time.</p>
+			<p class="indent">At least one of the creatures affected must be touching a computer with Internet connection. The targets must be sent to a specific computer that is currently active online. Instant connectivity causes the targets to appear in the room from which the receiving device is, automatically gaining surprise on anyone else in that room.</p>
+			<p class="indent">You must have seen the receiving device for at least 1 minute from 5 feet or less to be able to target that device.</p>
+			<p class="indent">If any of the devices have some kind of security (or if the device is in a secure network), the spell cannot be casted until the security is disabled (for more information about disabling security, read the "Using Electronic Devices" section)</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">5</set>
+			<set name="school" addition="Technomancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a device connected to internet worth at least $100</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Machine Invisibility" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_MACHINE_INVISIBILITY">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>A creature or object you touch cannot be detected by video cameras, electronic sensors, or other high-tech detection machines for the duration of the spell. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The target remain visible to vision.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">1</set>
+			<set name="school" addition="Technomancy">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a glass lens, which the caster fogs by breathing on it</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Magic ID" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_MAGIC_ID">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>You touch a small card or slip of paper appear to be a valid identification card of your choosing. The card bears your name, likeness, and all other data expected by anyone examining such a card. However, it is only visually accurate and does not contain any valid machine-readable data or electronic coding. You cannot use this spell to make an electronic passkey.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">0</set>
+			<set name="school" addition="Technomancy">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small card or slip of paper</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Power Device" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_POWER_DEVICE">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>You touch an electrical or mechanical device that requires a power source. For the duration of the spell, the device functions exactly as it normally would if it had conventional power.</p>
+			<p class="indent">This spell can affect any household or handheld device, or general-purpose vehicle. Larger or more intricate devices cannot be powered with this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">1</set>
+			<set name="school" addition="Technomancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Relay Text" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_RELAY_TEXT">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>You cause a text message of up to 25 words to appear on the screen of an electronic device capable of receiving such messages, such as a smartphone, tablet, or computer. If the device is turned on, the message appears instantly; if not, the message appears as soon as someone turns it on. The message remains onscreen until read, then disappears, leaving no electronic record of its appearance. You must have seen the device to send a message to it.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">2</set>
+			<set name="school" addition="Technomancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Unlimited</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Shutdown" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_SHUTDOWN">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>The spell shuts down all electronic devices in a 15-foot radius centred on a point you can see. When the spell ends, the devices operate again as if their operation had not been interrupted.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the radius increases by 15 feet for each slot level above 3rd</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">3</set>
+			<set name="school" addition="Technomancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the CONTROL, ALT and DELETE keys from a computer keyboard</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Synchronicity" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_SYNCHRONICITY">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>The creature you touch feels reality subtly shifted to its favor while this spell is in effect. The target isn't inconvenienced by mundane delays of any sort. Traffic lights are always green, there is always a waiting elevator, and a taxi is always around the corner. The target can run at full speed through dense crowds, and attacks of opportunity provoked by the target's movement are made with disadvantage.</p>
+			<p class="indent">Synchronicity grants advantage to Dexterity (Stealth) checks, since the target always finds a handy piece of cover available. Additionally, the target has advantage on all ability checks made to drive or pilot a vehicle.</p>
+			<p class="indent">In the event that two or more creatures under the effect of Synchronicity are attempting to avoid being inconvenienced by each other, the creatures engage in a contest of Charisma each time the effects of the spells would oppose each other.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">5</set>
+			<set name="school" addition="Technomancy">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Wire Walk" type="Spell" source="Modern Handbook" id="ID_DCAD_MH_SPELL_WIRE_WALK">
+		<supports>Wizard, Bard, Artificer</supports>
+		<description>
+			<p>This spell instantly transports up to six willing creatures of your choice that you can see within range to the location of a telephone you call. The telephone must be answered (either by a creature or by an answering machine), and it works only over an open line. You arrive adjacent to the device (within 5 feet of it), and any other creatures transported by the spell appear next to you.</p>
+		</description>
+		<setters>
+			<set name="keywords">technomancy</set>
+			<set name="level">4</set>
+			<set name="school" addition="Technomancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

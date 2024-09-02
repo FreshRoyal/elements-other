@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items-tools.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-tools.xml" />
+		</update>
+	</info>
+
+	<element name="Engineering Kit" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TOOL_ENGINEERING_KIT">
+		<description>
+			<p>This kit includes a soldering gun, wires, clips, wire cutters and various diagnostic tools. Proficiency with this kit lets you add your proficiency bonus to any ability check you make to repair electrical devices and to disarm planted explosives.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_ENGINEERING_KIT</set>
+		</setters>
+	</element>
+
+	<element name="Tool Proficiency (Engineering Kit)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_ENGINEERING_KIT">
+		<supports>Tool</supports>
+	</element>
+
+	<element name="Forensics Kit" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TOOL_FORENSICS_KIT">
+		<description>
+			<p>This kit includes bindle paper, sterile swabs, distilled water, evidence seals/tape, footwear casting materials, personal protective equipment, test tubes and various other tools for collecting evidence at crime scenes without contaminating it. Proficiency with this kit lets you add your proficiency bonus to any ability check you make to investigate any area or body considered as a crime scene.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_FORENSICS_KIT</set>
+		</setters>
+	</element>
+
+	<element name="Tool Proficiency (Forensics Kit)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_FORENSICS_KIT">
+		<supports>Tool</supports>
+	</element>
+	
+	<element name="Hacking Tools" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TOOL_HACKING_TOOLS">
+		<description>
+			<p>This kit contains the hardware and software necessary to allow access into most computer systems and electronic devices such as automatic port scanning, banner grabbing, footprinting, SQL Injection, web application vulnerability search, DDoS tools and data sniffing. Proficiency with hacking tools lets you add your proficiency bonus to any Intelligence checks you make to connect to or make use of a computer system or electronic device. The kit fits snugly in a backpack or toolbox. You might need a computer (laptop or desktop), a smartphone or a tablet to use some elements of this kit.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS</set>
+		</setters>
+	</element>
+
+	<element name="Tool Proficiency (Hacking Tools)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS">
+		<supports>Tool</supports>
+	</element>
+
+	<element name="Mechanic Tools" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TOOL_MECHANIC_TOOLS">
+		<description>
+			<p>This kit includes basic tools for repairing cars and motorcycles.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_MECHANIC_TOOLS</set>
+		</setters>
+	</element>
+
+	<element name="Tool Proficiency (Mechanic Tools)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_MECHANIC_TOOLS">
+		<supports>Tool</supports>
+	</element>
+
+	<element name="Spy Kit" type="Item" source="Modern Handbook" id="ID_DCAD_MH_ITEM_TOOL_SPY_KIT">
+		<description>
+			<p>This kit includes items such as camera detectors, sound amplifier, small cameras and microphones, noise generators, frequency and cell phone detectors and tracers. You might need a computer, a smartphone or a tablet to use some elements of this kit.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_SPY_KIT</set>
+		</setters>
+	</element>
+
+	<element name="Tool Proficiency (Spy Kit)" type="Proficiency" source="Modern Handbook" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_SPY_KIT">
+		<supports>Tool</supports>
+	</element>
+
+</elements>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/source.xml" />
+		</update>
+	</info>
+
+	<element name="Modern Handbook" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_DCAD_MODERN_HANDBOOK">
+		<description>
+			<p>Create a modern-themed campaign with new rules and options for the world's greatest roleplaying game</p>
+		</description>
+		<setters>
+			<set name="abbreviation">MH</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/comments/vddxa8/modern_handbook_v30/</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/MH.png</set>
+			<set name="author" abbreviation="DCAD" url="https://www.reddit.com/user/AeronDrake/">AeronDrake</set>
+			<set name="homebrew">true</set>
+			<set name="release">20220615</set>
+		</setters>
+	</element>
+
+</elements>

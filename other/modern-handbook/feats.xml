@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/feats.xml" />
+		</update>
+	</info>
+	
+	
+	
+	<element name="Gunslinger" type="Feat" source="Modern Handbook" id="ID_DCAD_MH_FEAT_GUNSLINGER">
+		<prerequisite>Proficiency with at least one firearm</prerequisite>
+		<requirements>ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_LIGHT||ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_POCKET||ID_DCAD_MH_WEAPON_PROFICIENCY_REVOLVER||ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_HUNTING||ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_DOUBLE_BARREL||ID_DCAD_MH_WEAPON_PROFICIENCY_GRENADE_LAUNCHER||ID_DCAD_MH_WEAPON_PROFICIENCY_MACHINE_PISTOL||ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_HEAVY||ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_SNIPER||ID_DCAD_MH_WEAPON_PROFICIENCY_RIFLE_ASSAULT||ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_TACTICAL||ID_DCAD_MH_WEAPON_PROFICIENCY_SUBMACHINE_GUN</requirements>
+		<description>
+			<p><i>Prerequisite: Proficiency with at least one firearm</i></p>
+			<p>Thanks to extensive practice with firearms, you gain the following benefits:</p>
+			<ul>
+				<li>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls with firearms.</li>
+				<li>Once per turn, when you attack with a firearm you can reload it as a free action.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls with firearms.
+			Once per turn, when you attack with a firearm you can reload it as a free action.</description>
+		</sheet>
+	</element>
+
+	<element name="Hacker" type="Feat" source="Modern Handbook" id="ID_DCAD_MH_FEAT_HACKER">
+		<description>
+			<p>You have worked with several hacking programs and devices, gaining the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with the hacking tools.</li>
+				<li>When you use your action to to operate an electronic device, you can make an additional action to operate the device for free.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you use your action to to operate an electronic device, you can make an additional action to operate the device for free.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Hacker" />
+			<grant type="Proficiency" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Malware Master" type="Feat" source="Modern Handbook" id="ID_DCAD_MH_FEAT_MALWARE_MASTER">
+		<description>
+			<p>You have spent hours studying and creating malware, gaining the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with the hacking tools.</li>
+				<li>You can add half your proficiency bonus to the malware DC. In addition, you count as two characters for purposes of reducing the time it takes to create malware.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can add {{proficiency:half}} to the malware DC. In addition, you count as two characters for purposes of reducing the time it takes to create malware.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Malware Master" />
+			<grant type="Proficiency" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Mechanic" type="Feat" source="Modern Handbook" id="ID_DCAD_MH_FEAT_MECHANIC">
+		<description>
+			<p>You have spent years of looking and repairing engines and other parts of vehicles, gaining the following benefits:</p>
+			<ul>
+				<li>You gain proficiency with the mechanic tools.</li>
+				<li>Whenever you repair a damaged vehicle using the mechanic tools, you repair an extra number of hit points of damage equal to your proficiency bonus.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever you repair a damaged vehicle using the mechanic tools, you repair an extra number of hit points of damage equal to {{proficiency}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_MECHANIC_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Sapper" type="Feat" source="Modern Handbook" id="ID_DCAD_MH_FEAT_SAPPER">
+		<description>
+			<p>You have practiced extensively with a variety of explosives, gaining the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>You can add half your proficiency bonus to the planted explosives DC.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can add {{proficiency:half}} to the planted explosives DC.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Sapper" />
+		</rules>
+	</element>
+
+	<element name="Tech Savant" type="Feat" source="Modern Handbook" id="ID_DCAD_MH_FEAT_TECH_SAVANT">
+		<description>
+			<p>Thanks to extensive work and understanding of electronic devices, you gain the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with the engineering kit or the mechanic tools (your choice).</li>
+				<li>You have advantage on Intelligence checks made to diagnose and repair electronic or mechanical devices.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on Intelligence checks made to diagnose and repair electronic or mechanical devices.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Tech Savant" />
+			<select type="Proficiency" name="Tool Proficiency, Tech Savant" supports="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_ENGINEERING_KIT||ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_MECHANIC_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Vehicle Expert" type="Feat" source="Modern Handbook" id="ID_DCAD_MH_FEAT_VEHICLE_EXPERT">
+		
+		<description>
+			<p>You have been driving or piloting more time than most of the common people, gaining the following benefits:</p>
+			<ul>
+				<li>Choose between vehicles (land), vehicles (air), or vehicles (water). You gain proficiency with the chosen vehicle.</li>
+				<li>Whenever you make a Dexterity check to do a maneuver or for regaining control of a vehicle, you can add twice your proficiency bonus. This bonus only applies when driving or piloting vehicles you are proficient with.</li>
+				<li>You can select this feat multiple times. Each time you do so, you must choose a different vehicle proficiency.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever you make a Dexterity check to do a maneuver or for regaining control of a vehicle, you can add twice your proficiency bonus. This bonus only applies when driving or piloting vehicles you are proficient with.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Vehicle Proficiency, Vehicle Expert" supports="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_AIR||ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND||ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+		</rules>
+	</element>
+	<element name="Vehicle Expert" type="Feat" source="Modern Handbook" id="ID_DCAD_MH_FEAT_VEHICLE_EXPERT_1">
+		<compendium display="false" />
+		<requirements>ID_DCAD_MH_FEAT_VEHICLE_EXPERT</requirements>
+		<description>
+			<p>You have been driving or piloting more time than most of the common people, gaining the following benefits:</p>
+			<ul>
+				<li>Choose between vehicles (land), vehicles (air), or vehicles (water). You gain proficiency with the chosen vehicle.</li>
+				<li>Whenever you make a Dexterity check to do a maneuver or for regaining control of a vehicle, you can add twice your proficiency bonus. This bonus only applies when driving or piloting vehicles you are proficient with.</li>
+				<li>You can select this feat multiple times. Each time you do so, you must choose a different vehicle proficiency.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever you make a Dexterity check to do a maneuver or for regaining control of a vehicle, you can add twice your proficiency bonus. This bonus only applies when driving or piloting vehicles you are proficient with.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Vehicle Proficiency, Vehicle Expert" supports="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_AIR||ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND||ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+		</rules>
+	</element>
+	<element name="Vehicle Expert" type="Feat" source="Modern Handbook" id="ID_DCAD_MH_FEAT_VEHICLE_EXPERT_2">
+		<compendium display="false" />
+		<requirements>ID_DCAD_MH_FEAT_VEHICLE_EXPERT_1</requirements>
+		<description>
+			<p>You have been driving or piloting more time than most of the common people, gaining the following benefits:</p>
+			<ul>
+				<li>Choose between vehicles (land), vehicles (air), or vehicles (water). You gain proficiency with the chosen vehicle.</li>
+				<li>Whenever you make a Dexterity check to do a maneuver or for regaining control of a vehicle, you can add twice your proficiency bonus. This bonus only applies when driving or piloting vehicles you are proficient with.</li>
+				<li>You can select this feat multiple times. Each time you do so, you must choose a different vehicle proficiency.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever you make a Dexterity check to do a maneuver or for regaining control of a vehicle, you can add twice your proficiency bonus. This bonus only applies when driving or piloting vehicles you are proficient with.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Vehicle Proficiency, Vehicle Expert" supports="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_AIR||ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND||ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+		</rules>
+	</element>
+	
+</elements>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="information.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/information.xml" />
+		</update>
+	</info>
+
+	<element name="Additional Modern Proficiencies" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_ADDITIONAL_MODERN_PROFICIENCIES">
+		<description>
+			<h5>Additional Modern Proficiencies</h5>
+			<table>
+				<thead>
+					<tr><td>Class</td><td>Additional Modern Proficiencies</td></tr>
+				</thead>
+				<tr><td>Artificer</td><td>Explosive devices</td></tr>
+				<tr><td>Bard</td><td>Heavy pistols</td></tr>
+				<tr><td>Druid</td><td>Expandable batons, metal batons, machetes, survival knives, pocket knifes, dart guns, taser guns</td></tr>
+				<tr><td>Rogue</td><td>Heavy pistols, tactical tomahawks, explosive devices</td></tr>
+				<tr><td>Sorcerer</td><td>Expandable batons, stun batons, brass knuckles, pocket knifes, dart guns, light pistols, pocket pistols, taser guns</td></tr>
+				<tr><td>Wizard</td><td>Expandable batons, stun batons, brass knuckles, pocket knifes, dart guns, light pistols, pocket pistols, taser guns</td></tr>
+			</table>
+		</description>
+	</element>
+	
+	<element name="Battery Life &amp; Recharging" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_BATTERY_LIFE_AND_RECHARGING">
+		<description>
+			<p>Low-end laptops can run up to 2 hours on a full charge. Mid-end and high-end laptops can run up to 4 hours on a full charge.</p>
+			<p class="indent">Low-end smartphones and tablets can run up to 5 hours on a full charge. Mid-end and high-end smartphones and tablets can run up to 10 hours on a full charge.</p>
+			<p class="indent">In addition, charging a fully discharged laptop, smartphone, or tablet takes 2 hours, or 4 hours if is being used while charging.</p>
+		</description>
+	</element>
+	
+	<element name="Currency" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_CURRENCY">
+		<description>
+			<p>Most modern worlds uses a particular currency instead of gold coins, and almost every individual uses a credit or debit card for buying an item (still, they might have some cash in their pockets). To represent this, all prices found in this book are in "Credits" ($), a generic currency, and for easier conversions from other books, 1 credit equals to 1 gold piece (so if an object originally cost 5 sp, it will cost $0.5 in a modern setting).</p>
+		</description>
+	</element>
+
+	<element name="Scope Increments" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_SCOPE_INCREMENTS">
+		<description>
+			<h5>Scope Increments</h5>
+			<table>
+				<thead>
+					<tr><td>Scope</td><td>Range Increment</td></tr>
+				</thead>
+				<tr><td>×2</td><td>50%</td></tr>
+				<tr><td>×4</td><td>100%</td></tr>
+				<tr><td>×8</td><td>200%</td></tr>
+			</table>
+		</description>
+	</element>
+	
+	<element name="Supressing Fire" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_SUPPRESSING_FIRE">
+		<description>
+			<p>Every firearm can be used for suppressing fire. As an action, you can spray in a 10-foot-cube area within the firearm's normal range using up to ten pieces of ammunition. Each creature in the area must succeed on a Wisdom saving throw (the DC equals to 8 + the number of bullets used) or be affected by this until action the beginning of your next turn. A suppressed creature can't willingly move closer to the source of its suppression. On a critical fail, the creature also takes the weapon's damage. A target automatically succeeds on the save if it can't be frightened.</p>
+		</description>
+	</element>
+
+	<!--Starting Equipment-->
+
+	<element name="Modern Starting Equipment: Artificer" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_ARTIFICER">
+		<description>
+			<ul>
+				<li>Any two simple weapons of your choice.</li>
+				<li>A light pistol and 20 pistol bullets</li>
+				<li>(a) kevlar-lined coat or (b) light-duty vest</li>
+				<li>thieves' tools and a modern dungeoneer's pack</li>
+			</ul>
+			<p>Alternatively, you may start with 5d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Barbarian" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_BARBARIAN">
+		<description>
+			<ul>
+				<li>(a) a greataxe or (b) any martial melee weapon</li>
+				<li>(a) two machetes or (b) any simple weapon</li>
+				<li>A modern explorer's pack, and four survival knives</li>
+			</ul>
+			<p>Alternatively, you may start with 2d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Bard" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_BARD">
+		<description>
+			<ul>
+				<li>(a) a rapier, (b) a longsword, or (c) simple weapon</li>
+				<li>(a) a modern diplomat's pack or (b) a modern entertainer's pack</li>
+				<li>A musical instrument</li>
+				<li>Leather jacket, and a pocket knife</li>
+			</ul>
+			<p>Alternatively, you may start with 5d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Cleric" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_CLERIC">
+		<description>
+			<ul>
+				<li>(a) a Baton, metal or (b) a warhammer (if proficient)</li>
+				<li>(a) Light-duty vest, (b) leather jacket, or (c) special response vest (if proficient)</li>
+				<li>(a) a light pistol and 20 pistol bullets or (b) any simple weapon</li>
+				<li>(a) a modern priest's pack or (b) a modern explorer's pack</li>
+				<li>A riot shield and a holy symbol</li>
+			</ul>
+			<p>Alternatively, you may start with 5d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Druid" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_DRUID">
+		<description>
+			<ul>
+				<li>(a) a riot shield or (b) any simple weapon</li>
+				<li>(a) a scimitar or (b) any simple melee weapon</li>
+				<li>Leather jacket, a modern explorer's pack, and a druidic focus</li>
+			</ul>
+			<p>Alternatively, you may start with 2d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Fighter" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_FIGHTER">
+		<description>
+			<ul>
+				<li>(a) special response vest or (b) leather jacket, assault rifle, and 20 rifle bullets</li>
+				<li>(a) a martial weapon and a riot shield or (b) two martial weapons</li>
+				<li>(a) a light pistol and 20 pistol bullets or (b) two tactical tomahamks</li>
+				<li>(a) a modern dungeoneer's pack or (b) a modern explorer's pack</li>
+			</ul>
+			<p>Alternatively, you may start with 5d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Monk" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_MONK">
+		<description>
+			<ul>
+				<li>(a) a shortsword or (b) any simple weapon</li>
+				<li>(a) a modern dungeoneer's pack or (b) a modern explorer's pack</li>
+				<li>10 darts</li>
+			</ul>
+			<p>Alternatively, you may start with 5d6 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Paladin" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_PALADIN">
+		<description>
+			<ul>
+				<li>(a) a martial weapon and a riot shield or (b) two martial weapons</li>
+				<li>(a) five javelins or (b) any simple melee weapon</li>
+				<li>(a) a modern priest's pack or (b) a modern explorer's pack</li>
+				<li>Special response vest and a holy symbol</li>
+			</ul>
+			<p>Alternatively, you may start with 5d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Ranger" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_RANGER">
+		<description>
+			<ul>
+				<li>(a) light duty vest or (b) leather jacket</li>
+				<li>(a) two tactical tomahamks or (b) two simple melee weapons</li>
+				<li>(a) a modern dungeoneer's pack or (b) a modern explorer's pack</li>
+				<li>An assault rifle, and 20 rifle bullets</li>
+			</ul>
+			<p>Alternatively, you may start with 5d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Rogue" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_ROGUE">
+		<description>
+			<ul>
+				<li>(a) a rapier or (b) a shortsword</li>
+				<li>(a) a light pistol and 20 pistol bullets or (b) a shortsword</li>
+				<li>(a) a modern burglar's pack, (b) a modern dungeoneer's pack, or (c) a modern explorer's pack</li>
+				<li>Leather jacket, two pocket knives, and thieves' tools</li>
+			</ul>
+			<p>Alternatively, you may start with 4d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Sorcerer" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_SORCERER">
+		<description>
+			<ul>
+				<li>(a) a light pistol and 20 pistol bullets or (b) any simple weapon</li>
+				<li>(a) a component pouch or (b) an arcane focus</li>
+				<li>(a) a modern dungeoneer's pack or (b) a modern explorer's pack</li>
+				<li>Two pocket knives</li>
+			</ul>
+			<p>Alternatively, you may start with 3d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Warlock" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_WARLOCK">
+		<description>
+			<ul>
+				<li>(a) a light pistol and 20 pistol bullets or (b) any simple weapon</li>
+				<li>(a) a component pouch or (b) an arcane focus</li>
+				<li>(a) a modern scholar's pack or (b) a modern dungeoneer's pack</li>
+				<li>Leather jacket, any simple weapon, and two pocket knives</li>
+			</ul>
+			<p>Alternatively, you may start with 4d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+	<element name="Modern Starting Equipment: Wizard" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_MODERN_STARTING_EQUIPMENT_WIZARD">
+		<description>
+			<ul>
+				<li>(a) a quarterstaff or (b) a pocket knife</li>
+				<li>(a) a component pouch or (b) an arcane focus</li>
+				<li>(a) a modern scholar's pack or (b) a modern explorer's pack</li>
+				<li>A spellbook</li>
+			</ul>
+			<p>Alternatively, you may start with 4d6 × 10 credits ($) to buy your own equipment.</p>
+		</description>
+	</element>
+
+</elements>
