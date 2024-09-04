@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-weapons.xml" />
 		</update>
 	</info>
@@ -9,7 +9,7 @@
 	<element name="Firearms Damage Variant" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_FIREARMS_DAMAGE_VARIANT">
 		<description>
 			<p><i>Variant Optional Rule</i></p>
-			<p>f you think firearms does too much damage, you can reduce the damage to 1 dice instead of 2.</p>
+			<p>If you think firearms does too much damage, you can reduce the damage to 1 dice instead of 2.</p>
 		</description>
 	</element>
 	
