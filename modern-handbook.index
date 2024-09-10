@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="modern-handbook.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/modern-handbook.index" />
 		</update>
 	</info>
@@ -16,8 +16,22 @@
 		<file name="items-tools.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-tools.xml" />
 		<file name="items-vehicle.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-vehicle.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-weapons.xml" />
-		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/spells.xml" />				
-		
+		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/spells.xml" />
+
+		<!--Subclasses-->
+		<file name="artificer-pyrokinetic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/artificer-pyrokinetic.xml" />
+		<file name="barbarian-dreadnought.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/barbarian-dreadnought.xml" />
+		<file name="bard-fame.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/bard-fame.xml" />
+		<file name="cleric-technology.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/cleric-technology.xml" />
+		<file name="druid-city" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/druid-city.xml" />
+		<file name="fighter-commando.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/fighter-commando.xml" />
+		<file name="monk-gun-fu.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/monk-gun-fu.xml" />
+		<file name="paladin-vigilante.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/paladin-vigilante.xml" />
+		<file name="ranger-shadow-hunter-conclave.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/ranger-shadow-hunter-conclave.xml" />
+		<file name="rogue-infiltrator.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/rogue-infiltrator.xml" />
+		<file name="sorcerer-network.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/sorcerer-network.xml" />
+		<file name="warlock-superintelligence.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/warlock-superintelligence.xml" />
+		<file name="wizard-technomancy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/wizard-technomancy.xml" />
 		
 	</files>
 </index>
