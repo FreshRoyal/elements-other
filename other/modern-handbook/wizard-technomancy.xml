@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="wizard-technomancy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/wizard-technomancy.xml" />
+		</update>
+	</info>
+
+	<element name="School of Technomancy" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_WIZARD_SCHOOL_OF_TECHNOMANCY">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>A new world brings new opportunities as the magical and the mundane fuse into novel patterns. The technomage combines the rising power of magic with a deep understanding of technology. The technomage has a roster of spells that he or she may cast, and in addition gains new powers that meld magic and machinery.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_TECHNOMANCY_SAVANT" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_MACHINE_EMPATHY" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_PROGRAM_SPELL" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_ONLINE_CASTING" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_DOWNLOAD_SPELL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_TECHNOMANCY_SAVANT" level="2" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_MACHINE_EMPATHY" level="2" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_PROGRAM_SPELL" level="6" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_ONLINE_CASTING" level="10" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_DOWNLOAD_SPELL" level="14" />
+		</rules>
+	</element>
+
+	<element name="Technomancy Savant" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_TECHNOMANCY_SAVANT">
+		<description>
+			<p>Beginning when you select this school at 2nd level, you change your spellbook into a E-book device infused with magic, allowing you to save spells on it in a special format called "spellfiles". The cost or the time you must spend to copy a spell in your E-book device is halved (your choice).</p>
+		</description>
+		<sheet>
+			<description>You change your spellbook into a E-book device infused with magic, allowing you to save spells on it in a special format called "spellfiles". The cost or the time you must spend to copy a spell in your E-book device is halved (your choice).</description>
+		</sheet>
+	</element>
+
+	<element name="Machine Empathy" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_MACHINE_EMPATHY">
+		<description>
+			<p>Also at 2nd level, you gain proficiency with one of the following tools: engineering kit, hacking tools or mechanic tools, and whenever you make an ability check using the chosen tool, you add twice your proficiency bonus to that roll.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an ability check using the chosen tool from this feature, you add twice your proficiency bonus to that roll.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Machine Empathy" supports="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_ENGINEERING_KIT||ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS||ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_MECHANIC_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Program Spell" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_PROGRAM_SPELL">
+		<description>
+			<p>At 6th level, you can cast a 5th-level spell or lower with a casting time of 1 action while you're touching an electronic device. When you do so, you spend the spell slot and the material components (if any), but none of the spell effects occur. Instead, the spell is uploaded into the device for later use. You determine the method of activating the spell, such as typing a specific word, flicking a switch or similar. If the device already have a spell programmed, you cannot use this feature in that device until the previous spell is used or dismissed.</p>
+			<p class="indent">After that, a creature that has an Intelligence score of at least 6 can use an action to activate the spell and cast the programmed spell in the device. The creature must know the method of activation to cast the spell (for example, you can program the <i>haste</i> spell to be casted in a creature when it hits Control-Alt-H in the keyboard). A concentration spell placed in a device cannot be activated if you are concentrating on another spell.</p>
+			<p class="indent">When you program a spell in this way, it must be used within 8 hours. After that time, the magic fades and is wasted. The programmed spell is also lost if the device is destroyed or after you finish a long rest.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can cast a 5th-level spell or lower with a casting time of 1 action while you're touching an electronic device. When you do so, you spend the spell slot and the material components, but none of the spell effects occur. Instead, the spell is uploaded into the device for later use. You determine the method of activating the spell, such as typing a specific word, flicking a switch or similar. If the device already have a spell programmed, you cannot use this feature in that device until the previous spell is used or dismissed. &#13;
+			After that, a creature that has an Intelligence score of at least 6 can use an action to activate the spell and cast the programmed spell in the device. The creature must know the method of activation to cast the spell. A concentration spell placed in a device cannot be activated if you are concentrating on another spell. &#13;
+			When you program a spell in this way, it must be used within 8 hours. After that time, the magic fades and is wasted. The programmed spell is also lost if the device is destroyed or after you finish a long rest.</description>
+		</sheet>
+	</element>
+
+
+	<element name="Online Casting" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_ONLINE_CASTING">
+		<description>
+			<p>At 10th level, you can cast certain spells through electronic devices, including cameras, smartphones, tablets, computers, and so on by following these rules.</p>
+			<ul>
+				<li>You can only use this feature to cast spells that target a specific creature or objective.</li>
+				<li>The range is determined from you to the device and then from the device to your target.</li>
+				<li>If the spell requires you to see your target, you must be able to see it directly in order to cast it. This also applies if the spell requires the target to see or hear you. <i>If the device has a camera, a screen or speakers, you can try to hack and gain access to these parts for casting your spells</i>.</li>
+			</ul>
+			<p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain your expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{online casting:usage}}/Long Rest">
+			<description>ou can cast certain spells through electronic devices, including cameras, smartphones, tablets, computers, and so on by following these rules: &#13;
+			• You can only use this feature to cast spells that target a specific creature or objective. &#13;
+			• The range is determined from you to the device and then from the device to your target. &#13;
+			• If the spell requires you to see your target, you must be able to see it directly in order to cast it. This also applies if the spell requires the target to see or hear you. If the device has a camera, a screen or speakers, you can try to hack and gain access to these parts for casting your spells.</description>
+		</sheet>
+		<rules>
+			<stat name="online casting:usage" value="intelligence:modifier" bonus="bonus" />
+			<stat name="online casting:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Download Spell" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SCHOOL_OF_TECHNOMANCY_DOWNLOAD_SPELL">
+		<description>
+			<p>At 14th level, you can download temporary spellfiles into your E-book device to cast them once.</p>
+			<p class="indent">When you prepare your spells, you can choose two spells of 4th level or lower you know. These spells don't count against the total number of spells you can prepare and you can cast each of them once without expending a spell slot until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>When you prepare your spells, you can choose two spells of 4th level or lower you know. These spells don't count against the total number of spells you can prepare and you can cast each of them once without expending a spell slot until you finish a long rest.</description>
+		</sheet>
+	</element>
+
+</elements>

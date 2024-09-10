@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="fighter-commando.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/fighter-commando.xml" />
+		</update>
+	</info>
+
+	<element name="Commando" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FIGHTER_COMMANDO">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>A commando is a soldier of an elite light infantry or special operations force specialized in assault or unconventional high-value targets. Commandos differ from other types of special forces in that they primarily operate in covert combat, front-line reconnaissance, and raiding, rather than long range reconnaissance and unconventional warfare.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_TACTICAL_AID" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_PRE_PLANNING" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_ADDITIONAL_FIGHTING_STYLE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_RAPID_STRIKE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_FIRST_CONTACT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_TACTICAL_AID" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_PRE_PLANNING" level="7" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_ADDITIONAL_FIGHTING_STYLE" level="10" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_RAPID_STRIKE" level="15" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_FIRST_CONTACT" level="18" />
+		</rules>
+	</element>
+
+	<element name="Tactical Aid" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_TACTICAL_AID">
+		<description>
+			<p>When you choose this archetype at 3rd level, as a bonus action, you can give advantage to an ally on the next ability check or attack roll against an opponent you can see within 30 feet of you. You can use this feature a number of times equal to your proficiency bonus and you regain all expended uses of it when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can give advantage to an ally on the next ability check or attack roll against an opponent you can see within 30 feet of you.</description>
+		</sheet>
+	</element>
+
+	<element name="Pre-Planning" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_PRE_PLANNING">
+		<description>
+			<p>Starting at 7th level, after spending 1 hour observing a specific location, you learn two pieces of information from the following options (your choice).</p>
+			<ul>
+				<li><strong>Access.</strong> You discover a new way to access to the location. This can be an entry point such as an underground entrance through the sewers, an unlocked window in the 2nd floor, or the location of an item that can be used to enter (like a keycard).</li>
+				<li><strong>Alternative routes.</strong> You know some routes you can use to move within the location, such as the ventilation system or the underground tunnels.</li>
+				<li><strong>Dead Drop.</strong> You manage to get some of your equipment in a non-restricted area of the location, such as hidden inside a trash can in the laundry room or under a public bathroom sink. You can hide up to 20 lb. of equipment in one area within the location of your choice.</li>
+				<li><strong>Security Surveillance.</strong> You know the possible location of cameras, the security room, estimated number of guards, if there are metal detectors, ID checks, and so on.</li>
+			</ul>
+			<p class="indent">Additionally, while you are in the area you've studied, you have advantage on initiative rolls for the next 12 hours or until you use this feature again.</p>
+		</description>
+		<sheet>
+			<description>After spending 1 hour observing a specific location, you learn two pieces of information from the following options (your choice): &#13;
+			• Access. You discover a new way to access to the location. &#13;
+			• Alternative routes. You know some routes you can use to move within the location, such as the ventilation system or the underground tunnels. &#13;
+			• Dead Drop. You manage to get some of your equipment in a non-restricted area of the location. You can hide up to 20 lb. of equipment in one area within the location of your choice. &#13;
+			• Security Surveillance. You know the possible location of cameras, the security room, estimated number of guards, if there are metal detectors, ID checks, and so on. &#13;
+			Additionally, while you are in the area you've studied, you have advantage on initiative rolls for the next 12 hours or until you use this feature again.</description>
+		</sheet>
+	</element>
+	
+	<element name="Additional Fighting Style" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_ADDITIONAL_FIGHTING_STYLE">
+		<description>
+			<p>At 10th level, you can choose a second option for the Fighting Style class feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Fighting Style (Commando)" supports="Fighting Style, Fighter" />
+		</rules>
+	</element>
+
+	<element name="Rapid Strike" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_RAPID_STRIKE">
+		<description>
+			<p>Starting at 15th level, you learn to trade accuracy for swift strikes. If you have advantage on a weapon attack against a target on your turn, you can forgo that advantage to immediately make an additional weapon attack against the same target as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>If you have advantage on a weapon attack against a target on your turn, you can forgo that advantage to immediately make an additional weapon attack against the same target as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="First Contact" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COMMANDO_FIRST_CONTACT">
+		<description>
+			<p>At 18th level, if you take the Attack action on your first turn of a combat, you can make one additional ranged weapon attack as part of that action.</p>
+		</description>
+		<sheet>
+			<description>If you take the Attack action on your first turn of a combat, you can make one additional ranged weapon attack as part of that action.</description>
+		</sheet>
+	</element>
+
+</elements>

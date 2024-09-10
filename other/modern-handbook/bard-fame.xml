@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="bard-fame.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/bard-fame.xml" />
+		</update>
+	</info>
+
+	<element name="College of Fame" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_BARD_COLLEGE_OF_FAME">
+		<supports>Bard College</supports>
+		<description>
+			<p>Bards of the College of Fame are in the public's eye by day, while working for an agency or organization by night. These bards might simply be famous because who they are, or they may have earned their status because what they've done.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_BONUS_PROFICIENCIES" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_WINNING_SMILE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_COMPELLING_PERFORMANCE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_UTTERLY_CONVINCING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_WINNING_SMILE" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_COMPELLING_PERFORMANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_UTTERLY_CONVINCING" level="14" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you join the College of Fame at 3rd level, you gain proficiency with the Deception, Performance and Persuasion skills. Additionally, choose one of them. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Class Feature" name="Expertise (College of Fame)" supports="ID_EXPERTISE_SKILL_DECEPTION||ID_EXPERTISE_SKILL_PERFORMANCE||ID_EXPERTISE_SKILL_PERSUASION"/>
+		</rules>
+	</element>
+
+	<element name="Winning Smile" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_WINNING_SMILE">
+		<description>
+			<p>Also, at 3rd level, while you are not wearing any armor, your AC equals to 10 + your Dexterity modifier + your Charisma modifier.</p>
+			<p class="indent">You learn the <i>enthrall</i> and <i>suggestion</i> spells.</p>
+		</description>
+		<sheet>
+			<description>While you are not wearing any armor, your AC equals {{ac:unarmored defense fame}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense fame" value="10" />
+			<stat name="ac:unarmored defense fame" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense fame" value="wisdom:modifier" />
+			<stat name="ac:calculation" value="ac:unarmored defense fame" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (College of Fame)" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENTHRALL" spellcasting="Bard" />
+			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" spellcasting="Bard" />
+		</rules>
+	</element>
+	
+	<element name="Compelling Performance" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_COMPELLING_PERFORMANCE">
+		<description>
+			<p>At 6th level, as a bonus action, you can expend one use of Bardic Inspiration. If you do so, for the next minute you can cast the command spell at 1st level as a bonus action on each of your turns without using a spell slot a number of times equal to your Charisma modifier.</p>
+			<p class="indent">Additionally, whenever any of your spells ends while using this feature, the creature or creatures affected don't realize they were charmed by you unless you want to.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>For the next minute you can cast the command spell at 1st level as a bonus action on each of your turns without using a spell slot {{charisma:modifier}} times.
+			Additionally, whenever any of your spells ends while using this feature, the creature or creatures affected don't realize they were charmed by you unless you want to.</description>
+		</sheet>
+	</element>
+
+	<element name="Utterly Convincing" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_COLLEGE_OF_FAME_UTTERLY_CONVINCING">
+		<description>
+			<p>Starting at 14th level, when you make a Charisma-based ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add twice the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the DM tells you whether you succeed or fail.</p>
+			<p class="indent">Additionally, when a creature uses one of your Bardic Inspiration dice to improve some Charisma-based ability check, it also adds twice the number rolled to its ability check.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you make a Charisma-based ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add twice the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the DM tells you whether you succeed or fail. &#13;
+			Additionally, when a creature uses one of your Bardic Inspiration dice to improve some Charisma-based ability check, it also adds twice the number rolled to its ability check.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="barbarian-dreadnought.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/barbarian-dreadnought.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Dreadnought" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_BARBARIAN_PATH_OF_THE_DREADNOUGHT">
+		<supports>Primal Path</supports>
+		<description>
+			<p>You are a merciless, destructive and unstoppable force. When it comes to fighting, you are at the forefront. A dreadnought generally approach combat in the most direct way possible, rarely carrying only one gun and leaving a path of devastation behind. In the midst of battle, you are capable to take a great deal of punishment while dealing out far more to any who dares to go against you.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_JUGGERNAUGHT" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_DRAW_FIRE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_BODY_GUARD" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_DEVASTATING_RAGE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_JUGGERNAUGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_DRAW_FIRE" level="6" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_BODY_GUARD" level="10" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_DEVASTATING_RAGE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Juggernaught" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_JUGGERNAUGHT">
+		<description>
+			<p>Starting when you select this path at 3rd level, when you are targeted by an attack or a spell while you're raging, you can use your reaction to gain a bonus to your Armor Class equal to your rage damage until the beginning of your next turn.</p>
+			<p class="indent">Additionally, you gain advantage in saving throws against being knocked prone or moved against your will.</p>
+		</description>
+		<sheet>
+			<description>When you are targeted by an attack or a spell while you're raging, you can use your reaction to gain a bonus to your Armor Class equal to {{barbarian rage:damage}} until the beginning of your next turn. &#13;
+			Additionally, you gain advantage in saving throws against being knocked prone or moved against your will.</description>
+		</sheet>
+	</element>
+
+	<element name="Draw Fire" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_DRAW_FIRE">
+		<description>
+			<p>At 6th level, you can use your reaction to distract opponents and convince them that you are the most dangerous target in the area. Choose one creature that you can see within 15 feet of you which is attacking one friendly creature. If the creature can see or hear you, it must succeed on a Charisma saving throw (DC equals to 8 + your proficiency bonus + your Charisma modifier) or attack you instead.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Choose one creature that you can see within 15 feet of you which is attacking one friendly creature. If the creature can see or hear you, it must succeed on a Charisma saving throw (DC {{dreadnought:draw fire:dc}}) or attack you instead.</description>
+		</sheet>
+		<rules>
+			<stat name="dreadnought:draw fire:dc" value="8" />
+			<stat name="dreadnought:draw fire:dc" value="charisma:modifier" />
+			<stat name="dreadnought:draw fire:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Body Guard" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_BODY_GUARD">
+		<description>
+			<p>At 10th level, while you're raging, any creature within 5 feet of you that's hostile to you have disadvantage on attack rolls against targets other than you or another character with this feature. A creature is immune to this effect if it can't see or hear you or if it can't be frightened.</p>
+		</description>
+		<sheet>
+			<description>While you're raging, any creature within 5 feet of you that's hostile to you have disadvantage on attack rolls against targets other than you or another character with this feature. A creature is immune to this effect if it can't see or hear you or if it can't be frightened.</description>
+		</sheet>
+	</element>
+
+	<element name="Devastating Rage" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PATH_OF_THE_DREADNOUGHT_DEVASTATING_RAGE">
+		<description>
+			<p>At 14th level, when you have half or less hit points while raging, you can add your Rage Damage bonus to attack rolls.</p>
+		</description>
+		<sheet>
+			<description>When you have half or less hit points while raging, you can add {{barbarian rage:damage}} to attack rolls.</description>
+		</sheet>
+	</element>
+
+</elements>

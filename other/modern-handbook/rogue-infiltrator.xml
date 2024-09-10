@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="rogue-infiltrator.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/rogue-infiltrator.xml" />
+		</update>
+	</info>
+
+	<element name="Infiltrator" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_ROGUE_INFILTRATOR">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p>An infiltrator is a master of stealth who can break into places others wouldn't dream of, find what it's looking for, and get back out again while eluding or evading anyone who would try to stop him.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_BONUS_PROFICIENCIES" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_SWEEP" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_INFILTRATION_ADEPT" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_ENGINEER" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_MASTER_INFILTRATOR" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_SWEEP" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_INFILTRATION_ADEPT" level="9" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_ENGINEER" level="13" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_MASTER_INFILTRATOR" level="17" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and hacking tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Proficiency" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Sweep" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_SWEEP">
+		<description>
+			<p>Starting at 3rd level, you know how to size up an area and get the lay of the land in a single sweep of your eyes that often isn't perceptible to those around you.</p>
+			<p class="indent">You can use your bonus action granted by your Cunning Action to make the Search action. You also gain advantage on the check when looking for alarms, surveillance devices, escape routes and any expensive objects that can easily be concealed and carried away.</p>
+		</description>
+		<sheet>
+			<description>You can use your bonus action granted by your Cunning Action to make the Search action. You also gain advantage on the check when looking for alarms, surveillance devices, escape routes and any expensive objects that can easily be concealed and carried away.</description>
+		</sheet>
+	</element>
+
+	<element name="Infiltration Adept" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_INFILTRATION_ADEPT">
+		<description>
+			<p>At 9th level, you have a number of infiltration dice equal to your Dexterity modifier, which are d8s. You regain all of your expended infiltration dice when you finish a short or long rest. You can use an infiltration dice and add it to the result for the following checks after you roll, but before the DM says whether the roll succeeds or fails.</p>
+			<ul>
+				<li>Whenever you make a Dexterity (Stealth) check.</li>
+				<li>Whenever you make an attack roll while hiding.</li>
+				<li>Whenever you make a check using, disarming or repairing an electrical or mechanical device.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have {{dexterity:modifier}} infiltration dice, which are d{{infiltrator:infiltration dice}}s. You regain all of your expended infiltration dice when you finish a short rest. You can use an infiltration dice and add it to the result for the following checks after you roll, but before the DM says whether the roll succeeds or fails. &#13;
+			• Whenever you make a Dexterity (Stealth) check. &#13;
+			• Whenever you make an attack roll while hiding. &#13;
+			• Whenever you make a check using, disarming or repairing an electrical or mechanical device.</description>
+		</sheet>
+		<rules>
+			<stat name="infiltrator:infiltration dice" value="8" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Engineer" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_ENGINEER">
+		<description>
+			<p>At 13th level, you understand how machines and electrical devices work. You gain advantage on checks to; use, disarm or repair, electrical or mechanical devices.</p>
+			<p class="indent">Additionally, when you fail to deactivate a trap, explosive or alarm, you can use your reaction to avoid triggering the effect (activating the trap, detonate an explosive or trigger an alarm). After you use your reaction for this feature, you must finish a short or long rest to use it again.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on checks to; use, disarm or repair, electrical or mechanical devices. &#13;
+			Additionally, when you fail to deactivate a trap, explosive or alarm, you can use your reaction to avoid triggering the effect (activating the trap, detonate an explosive or trigger an alarm). After you use your reaction for this feature, you must finish a short rest to use it again.</description>
+		</sheet>
+	</element>
+
+	<element name="Master Infiltrator" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_INFILTRATOR_MASTER_INFILTRATOR">
+		<description>
+			<p>At 17th level, your infiltration dice are now d10s, and you can use up to two infiltration dice for each check.</p>
+			<p class="indent">In addition, whenever you make a check using tools you are not proficient, you can add half your proficiency bonus to that roll.</p>
+		</description>
+		<sheet>
+			<description>You can use up to two infiltration dice for each check. &#13;
+			Whenever you make a check using tools you are not proficient, you can add {{proficiency:half}} to that roll.</description>
+		</sheet>
+		<rules>
+			<stat name="infiltrator:infiltration dice" value="10" bonus="base" />
+		</rules>
+	</element>
+
+</elements>

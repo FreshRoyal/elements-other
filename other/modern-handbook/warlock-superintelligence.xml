@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="warlock-superintelligence.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/warlock-superintelligence.xml" />
+		</update>
+	</info>
+
+	<element name="The Superintelligence" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_WARLOCK_THE_SUPERINTELLIGENCE">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Your patron is a very powerful and independent Artificial Intelligence. You are not completely sure how it was originated: some warlocks say it was created as an overlord for the network, and others say it was created by the massive interactions through the digital world.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_EXPANDED_SPELL_LIST" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_SUPERNATURAL_HACKER" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_AI_SERVANT" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_DIGITAL_CONNECTION" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_SPELL_HACKING" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_CREATURE_HACKING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_SUPERNATURAL_HACKER" level="1" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_AI_SERVANT" level="1" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_DIGITAL_CONNECTION" level="6" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_SPELL_HACKING" level="10" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_CREATURE_HACKING" level="14" />
+		</rules>
+	</element>
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Superintelligence lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">THE SUPERINTELLIGENCE EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>degauss, machine invisibility</em></td></tr>
+				<tr><td>2nd</td><td><em>dataread, relay text</em></td></tr>
+				<tr><td>3rd</td><td><em>electromagnetic pulse, shutdown</em></td></tr>
+				<tr><td>4th</td><td><em>arcane eye, wire walk</em></td></tr>
+				<tr><td>5th</td><td><em>instant connectivity, synchronicity</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false"/>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_DCAD_MH_SPELL_DEGAUSS</extend>
+			<extend>ID_DCAD_MH_SPELL_MACHINE_INVISIBILITY</extend>
+			<extend>ID_DCAD_MH_SPELL_DATAREAD</extend>
+			<extend>ID_DCAD_MH_SPELL_RELAY_TEXT</extend>
+			<extend>ID_DCAD_MH_SPELL_ELECTROMAGNETIC_PULSE</extend>
+			<extend>ID_DCAD_MH_SPELL_SHUTDOWN</extend>
+			<extend>ID_PHB_SPELL_ARCANE_EYE</extend>
+			<extend>ID_DCAD_MH_SPELL_WIRE_WALK</extend>
+			<extend>ID_DCAD_MH_SPELL_INSTANT_CONNECTIVITY</extend>
+			<extend>ID_DCAD_MH_SPELL_SYNCHRONICITY</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Supernatural Hacker" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_SUPERNATURAL_HACKER">
+		<description>
+			<p>Starting at 1st level, you gain proficiency with hacking tools and when you make a roll to use an electronic device, you can use your Charisma modifier instead.</p>
+		</description>
+		<sheet>
+			<description>When you make a roll to use an electronic device, you can use your Charisma modifier instead.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS" />
+		</rules>
+	</element>
+	
+	<element name="AI Servant" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_AI_SERVANT">
+		<description>
+			<p>Also at 1st level, you gain the service of a mechanical construct powered by a basic AI sent by the Superintelligence to aid you. This AI is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying AI Servant stat block. You can determine the cosmetic characteristics of the AI, such as its form, its color, or any visible effect; your choice has no effect on its game statistics.</p>
+			<div class="reference">
+				<div element="ID_DCAD_MH_INFORMATION_AI_SERVANT_STATBLOCK" />
+			</div>
+			<p class="indent">As a bonus action, you can command your AI to leave its physical form and travel to an electronic device within 100 feet from you that you can see, allowing your AI to use that device. The AI can add your proficiency bonus on any Intelligence check related to using an electronic device.</p>
+			<p class="indent">If the AI is destroyed, you can build a new one with 8 hours of uninterrupted work and spending $10 in raw materials.</p>
+		</description>
+		<sheet>
+			<description>You gain the service of an AI construct. This AI is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying AI Servant stat block. &#13;
+			As a bonus action, you can command your AI to leave its physical form and travel to an electronic device within 100 feet from you that you can see, allowing your AI to use that device. The AI can add {{proficiency}} on any Intelligence check related to using an electronic device. &#13;
+			If the AI is destroyed, you can build a new one with 8 hours of uninterrupted work and spending $10 in raw materials.</description>
+		</sheet>
+	</element>
+	<element name="AI Servant" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_AI_SERVANT_STATBLOCK">
+		<description>
+			<p><em>Tiny construct, neutral</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 13</li>
+				<li><strong>Hit Points</strong> 5 (2d4)</li>
+				<li><strong>Speed</strong> 30 feet</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>4 (-3)</td><td>11 (+0)</td><td>10 (+0)</td><td>15 (+2)</td><td>10 (+0)</td><td>7 (-2)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> charmed, poisoned</li>
+				<li><strong>Senses</strong> passive Perception 10</li>
+				<li><strong>Languages</strong> Common</li>
+				<li><strong>Challenge</strong> 0</li>
+			</ul>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Slam.</em></strong> <em> Melee Weapon Attack:</em> +2 to hit, reach 5ft., one creature. <em>Hit:</em> 1d4 lightning damage, and the target must succeed on a DC 10 Constitution saving throw or be paralyzed for 1d4 rounds.</p>
+		</description>
+	</element>
+	
+	<element name="Digital Connection" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_DIGITAL_CONNECTION">
+		<description>
+			<p>At 6th level, you can you can cast any spell with the <i>technomagic</i> tag through your AI. In addition, you can use your action and concentrate to merge your mind with your AI, allowing you to travel and use any electronic device within 100 feet from you that you can see for a number of minutes equal to your Charisma modifier or until your concentration is broken (as if you are concentrating on a spell). Once you use this feature, you must finish a short or long rest to use it again.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can you can cast any spell with the technomagic tag through your AI. In addition, you can use your action and concentrate to merge your mind with your AI, allowing you to travel and use any electronic device within 100 ft from you that you can see {{charisma:modifier}} minutes or until your concentration is broken.</description>
+		</sheet>
+	</element>
+	
+	<element name="Spell Hacking" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_SPELL_HACKING">
+		<description>
+			<p>At 10th level, as a bonus action, you can spend one spell slot and gain resistance against any damage dealt by spells for 1 minute.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend one spell slot and gain resistance against any damage dealt by spells for 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Creature Hacking" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_CREATURE_HACKING">
+		<description>
+			<p>Starting at 14th level, you hack a creature you can see within 30 feet of you to weaken its defenses and make it more vulnerable to magic. The creature you choose must make an Intelligence saving throw. On a failed save, it has disadvantage on saving throws against spells and it takes double damage from spells for 1 minute. The creature can make another saving throw at the end of each of its turns to end this effect.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You hack a creature you can see within 30 ft of you to weaken its defenses and make it more vulnerable to magic. The creature you choose must make an Intelligence saving throw. On a failed save, it has disadvantage on saving throws against spells and it takes double damage from spells for 1 minute. The creature can make another saving throw at the end of each of its turns to end this effect.</description>
+		</sheet>
+	</element>
+
+</elements>

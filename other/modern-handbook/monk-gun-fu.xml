@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="monk-gun-fu.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/monk-gun-fu.xml" />
+		</update>
+	</info>
+
+	<element name="Way of the Gun Fu" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_MONK_WAY_OF_THE_GUN_FU">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of the Gun Fu are masters in the sophisticated close-quarters gunplay resembling a martial arts battle played out with firearms instead of traditional weapons.</p>
+			<p class="indent">The focus of gun fu is both style and the usage of firearms in ways that they were not designed to be used. Shooting a gun from each hand (usually paired with jumping to the side at the same time), shots from behind the back, as well as the use of guns as melee weapons are all common.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_GUN_FU_TECHNIQUE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_COUNTERSHOT" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_GUN_FU_MASTERY" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_BULLSEYE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_GUN_FU_TECHNIQUE" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_COUNTERSHOT" level="6" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_GUN_FU_MASTERY" level="11" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_BULLSEYE" level="17" />
+		</rules>
+	</element>
+
+	<element name="Gun Fu Technique" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_GUN_FU_TECHNIQUE">
+		<description>
+			<p>When you choose this tradition at 3rd level, you gain proficiency with heavy pistols and machine pistols. These weapons are monk weapons for you, and you gain the following benefits:</p>
+			<ul>
+				<li>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls with firearms.</li>
+				<li>Immediately after you take the Attack action on your turn to make an unarmed strike, you can spend 1 ki point to make an additional ranged weapon attack with a firearm as a bonus action.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Heavy pistols and machine pistols are monk weapons for you, and you gain the following benefits: &#13;
+			• Being within 5 ft of a hostile creature doesn't impose disadvantage on your ranged attack rolls with firearms. &#13;
+			• Immediately after you take the Attack action on your turn to make an unarmed strike, you can spend 1 ki point to make an additional ranged weapon attack with a firearm as a bonus action.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_HEAVY" />
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_MACHINE_PISTOL" />
+		</rules>
+	</element>
+
+	<element name="Countershot" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_COUNTERSHOT">
+		<description>
+			<p>At 6th level, when an enemy misses you with a melee attack, you can use your reaction to make a single ranged weapon attack with a firearm against the attacker. Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When an enemy misses you with a melee attack, you can use your reaction to make a single ranged weapon attack with a firearm against the attacker.</description>
+		</sheet>
+	</element>
+
+	<element name="Gun Fu Mastery" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_GUN_FU_MASTERY">
+		<description>
+			<p>At 11th level, you gain proficiency with submachine guns and tactical shotguns. These weapons are also considered as monk weapons for you.</p>
+			<p class="indent">Additionally, when you hit a target with a firearm which is a monk weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature only once on each of your turns.</p>
+		</description>
+		<sheet>
+			<description>Submachine guns and tactical shotguns are monk weapons for you. &#13;
+			Additionally, when you hit a target with a firearm which is a monk weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature only once on each of your turns.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SUBMACHINE_GUN" />
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_SHOTGUN_TACTICAL" />
+		</rules>
+	</element>
+
+	<element name="Countershot" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_WAY_OF_THE_GUN_FU_BULLSEYE">
+		<description>
+			<p>At 17th level, your mastery of firearms grants you extraordinary accuracy. If you make an attack roll with a firearm which is a monk weapon for you and miss, you can reroll it. You can use this feature only once on each of your turns.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>If you make an attack roll with a firearm which is a monk weapon for you and miss, you can reroll it.</description>
+		</sheet>
+	</element>
+
+</elements>

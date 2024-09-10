@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="artificer-pyrokinetic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/artificer-pyrokinetic.xml" />
+		</update>
+	</info>
+
+	<element name="Pyrokinetic" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_ARTIFICER_PYROKINETIC">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Pyrokinetics are artificers that specializes on creating and controlling fire with their abilities and magic. Even though some people think they are dangerous individuals, there are several pyrokinetics that use their abilities for extinguish hazardous fires that threaten life, property, and the environment as well as to rescue people from dangerous situations involving fires.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_BONUS_CANTRIPS" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROKINETIC_SPELLS" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROKINETIC_AMPLIFIER" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROMANCER" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_SPELL_HACKING" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_CREATURE_HACKING" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_THE_SUPERINTELLIGENCE_CREATURE_HACKING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_BONUS_CANTRIPS" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROKINETIC_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROKINETIC_AMPLIFIER" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROMANCER" level="5" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_IMPROVED_AMPLIFIER" level="9" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_MASTER_OF_THE_FLAMES" level="15" />
+		</rules>
+	</element>
+
+	<element name="Bonus Cantrips" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_BONUS_CANTRIPS">
+		<description>
+			<p>When you adopt this specialization at 3rd level, you know the <i>control flames</i> and <i>produce flame</i> cantrips. These spells count as artificer cantrips for you, but you cannot replace them with another cantrip from the artificer spell list when you level up in this class.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" spellcasting="Artificer" />
+			<grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" spellcasting="Artificer" />
+		</rules>
+	</element>
+	
+	<element name="Pyrokinetic Spells" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROKINETIC_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Pyrokinetic Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p>
+			<p><strong>PYROKINETIC SPELLS</strong></p>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>burning hands, fog cloud</em></td></tr>
+				<tr><td>5th</td><td><em>flaming sphere, scorching ray</em></td></tr>
+				<tr><td>9th</td><td><em>fireball, melf's minute meteors</em></td></tr>
+				<tr><td>13th</td><td><em>fire shield, wall of fire</em></td></tr>
+				<tr><td>17th</td><td><em>flame strike, immolation</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MELFS_MINUTE_METEORS" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Pyrokinetic Amplifier" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROKINETIC_AMPLIFIER">
+		<description>
+			<p>Beginning at 3rd level, you can canalize and amplify your pyrokinetic abilities. Using tinker's tools, you can take an action to magically create a pair of flaming gauntlets or for imbuing a weapon with your arcane energy. You can use the pyrokinetic amplifier as a spellcasting focus, and you gain new features depending on what option you choose, which are detailed below.</p>
+			<p class="indent"><b><i>Gauntlets. </i></b>You touch your forearms to create a pair of flaming gauntlets. You gain the following features:</p>
+			<ul>
+				<li><strong>Armor of Embers.</strong> Whenever you take fire damage, you can use your reaction to generate a protective flaming shield that absorb part of that damage, reducing the fire damage by 1d4. You can use this feature a number of times equal to half your proficiency bonus (rounded up), and you regain all expended uses of it when you finish a long rest.</li>
+				<li><strong>Burning Spells.</strong> When you cast a spell that deals acid, cold, lightning, or thunder damage, you can change that damage type to fire.</li>
+			</ul>
+			<p class="indent"><b><i>Weapon. </i></b>You touch a weapon you're proficient, giving it a fiery aspect. While you're using that weapon, it gains the following features:</p>
+			<ul>
+				<li><strong>Flaming Weapon.</strong> Whenever you hit with a weapon attack, the target takes an extra 1d4 fire damage. This fire damage count as magical for the purpose of overcoming resistance and immunity. The weapon can also ignite any flammable object that isn't being worn or carried.</li>
+				<li><strong>Critical Combustion.</strong> Each time you make a critical hit with your pyrokinetic amplifier weapon, the attack generates a fire explosion. After dealing the damage from the critical hit, the target and every other creature within 10 feet from it other than yourself must make Dexterity saving throw against your spell save DC, taking 2d8 fire damage on a failed save or half as much damage on a successful one.</li>
+			</ul>
+			<p class="indent">Once you create a pyrokinetic amplifier, you can't do so again until you finish a long rest or until you expend a spell slot of 1st level or higher. You can have only one pyrokinetic amplifier at a time.</p>
+		</description>
+		<sheet action="Action">
+			<description>Using tinker's tools, you can take an action to magically create a pair of flaming gauntlets or for imbuing a weapon with your arcane energy. You can use the pyrokinetic amplifier as a spellcasting focus, and you gain new features depending on what option you choose, which are detailed below. &#13;
+			Once you create a pyrokinetic amplifier, you can't do so again until you finish a long rest or until you expend a spell slot of 1st level or higher. You can have only one pyrokinetic amplifier at a time.</description>
+		</sheet>
+		<rules>
+			<stat name="amplifier:dice" value="4" bonus="base" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROKINETIC_AMPLIFIER_GAUNTLETS" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROKINETIC_AMPLIFIER_WEAPON" />
+		</rules>
+	</element>
+
+	<element name="Gauntlets" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROKINETIC_AMPLIFIER_GAUNTLETS">
+		<compendium display="false" />
+		<description>
+			<p>You touch your forearms to create a pair of flaming gauntlets. You gain the following features:</p>
+			<ul>
+				<li><strong>Armor of Embers.</strong> Whenever you take fire damage, you can use your reaction to generate a protective flaming shield that absorb part of that damage, reducing the fire damage by 1d4. You can use this feature a number of times equal to half your proficiency bonus (rounded up), and you regain all expended uses of it when you finish a long rest.</li>
+				<li><strong>Burning Spells.</strong> When you cast a spell that deals acid, cold, lightning, or thunder damage, you can change that damage type to fire.</li>
+			</ul>
+		</description>
+		<sheet usage="Pyrokinetic Amplifier">
+			<description>You touch your forearms to create a pair of flaming gauntlets. You gain the following features: &#13;
+			• Armor of Embers. Whenever you take fire damage, you can use your reaction to generate a protective flaming shield that absorb part of that damage, reducing the fire damage by 1d{{amplifier:dice}}. You can use this feature a number of times equal to {{proficiency:half:up}}, and you regain all expended uses of it when you finish a long rest. &#13;
+			• Burning Spells. When you cast a spell that deals acid, cold, lightning, or thunder damage, you can change that damage type to fire.</description>
+		</sheet>
+	</element>
+
+	<element name="Weapon" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROKINETIC_AMPLIFIER_WEAPON">
+		<compendium display="false" />
+		<description>
+			<p>You touch a weapon you're proficient, giving it a fiery aspect. While you're using that weapon, it gains the following features:</p>
+			<ul>
+				<li><strong>Flaming Weapon.</strong> Whenever you hit with a weapon attack, the target takes an extra 1d4 fire damage. This fire damage count as magical for the purpose of overcoming resistance and immunity. The weapon can also ignite any flammable object that isn't being worn or carried.</li>
+				<li><strong>Critical Combustion.</strong> Each time you make a critical hit with your pyrokinetic amplifier weapon, the attack generates a fire explosion. After dealing the damage from the critical hit, the target and every other creature within 10 feet from it other than yourself must make Dexterity saving throw against your spell save DC, taking 2d8 fire damage on a failed save or half as much damage on a successful one.</li>
+			</ul>
+		</description>
+		<sheet usage="Pyrokinetic Amplifier">
+			<description>You touch a weapon you're proficient. While you're using that weapon, it gains the following features: &#13;
+			• Flaming Weapon. Whenever you hit with a weapon attack, the target takes an extra 1d{{amplifier:dice}} fire damage. This fire damage count as magical for the purpose of overcoming resistance and immunity. The weapon can also ignite any flammable object that isn't being worn or carried. &#13;
+			• Critical Combustion. Each time you make a critical hit with your pyrokinetic amplifier weapon, the attack generates a fire explosion. After dealing the damage from the critical hit, the target and every other creature within 10 ft from it other than yourself must make Dexterity saving throw against your spell save DC, taking 2d8 fire damage on a failed save or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+
+	<element name="Pyromancer" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_PYROMANCER">
+		<compendium display="false" />
+		<description>
+			<p>At 5th level, you are an expert on controlling and sensing the fire around you, fueling your spells and abilities with it. You gain the following features:</p>
+			<ul>
+				<li>Whenever you cast a spell using your pyrokinetic amplifier as the spellcasting focus, you deal an additional 1d8 fire damage.</li>
+				<li>Additionally, you can spend 1 minute to focus on detecting heat and thermal signals in a 120 feet radius for a number of minutes equal to half your Artificer level (rounded up). You can use this feature a number of times equal to your proficiency bonus, and it only gives you the general direction and intensity of the sources of heat, but not the type (like if it's a creature or an object) or the exact number of sources.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+			Whenever you cast a spell using your pyrokinetic amplifier as the spellcasting focus, you deal an additional 1d8 fire damage. &#13;
+			Additionally, you can spend 1 minute to focus on detecting heat and thermal signals in a 120 feet radius for {{level:artificer:half:up}} minutes. You can use this feature a number of times equal to {{proficiency}}, and it only gives you the general direction and intensity of the sources of heat, but not the type or the exact number of sources.</description>
+		</sheet>
+	</element>
+
+	<element name="Improved Amplifier" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_IMPROVED_AMPLIFIER">
+		<description>
+			<p>Starting at 9th level, your pyrokinetic amplifier is capable of canalize even more your arcane magic, granting the following changes to each type.</p>
+			<p class="indent"><b><i>Gauntlets. </i></b>The fire damage reduced by the armor of embers is now 1d8, and whenever you reduce damage with this feature, you are healed by the same amount.</p>
+			<p class="indent"><b><i>Weapon. </i></b>The extra fire damage the weapon deals is now 1d8 and your attacks using your pyrokinetic amplifier weapon score a critical hit on a roll of 19 or 20. Additionally, you can spend a spell slot instead to use the critical combustion feature each time you hit a target with your weapon. The damage dealt from the critical combustion feature now count as magical for the purpose of overcoming resistance and immunity.</p>
+		</description>
+		<sheet>
+			<description>Your pyrokinetic amplifier is capable of canalize even more your arcane magic, granting the following changes to each type. &#13;
+			• Gauntlets. Whenever you reduce damage with this feature, you are healed by the same amount. &#13;
+			• Weapon. Your attacks using your pyrokinetic amplifier weapon score a critical hit on a roll of 19 or 20. Additionally, you can spend a spell slot instead to use the critical combustion feature each time you hit a target with your weapon. The damage dealt from the critical combustion feature now count as magical for the purpose of overcoming resistance and immunity.</description>
+		</sheet>
+		<rules>
+			<stat name="amplifier:dice" value="8" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Master of the Flames" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_PYROKINETIC_MASTER_OF_THE_FLAMES">
+		<description>
+			<p>Starting at 15th level, you have mastered the control of fire through your pyrokinetic abilities:</p>
+			<p class="indent">You gain resistance to fire damage.</p>
+			<p class="indent">You can cast conjure elemental (fire elemental only) and investiture of flame without expending a spell slot, without preparing the spell, and without material components, provided you use your pyrokinetic amplifier as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast conjure elemental (fire elemental only) and investiture of flame without expending a spell slot, without preparing the spell, and without material components, provided you use your pyrokinetic amplifier as the spellcasting focus.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+
+</elements>

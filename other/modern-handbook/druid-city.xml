@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="druid-city" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/druid-city.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the City" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_CIRCLE_OF_THE_CITY">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>The Circle of the City is made up of druids living in cities to guard and to maintain the balance between nature and civilization. Druids of this circle do not reject technology and metal, but rather they are very pragmatic about the technology and objects they use.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_BONUS_PROFICIENCIES" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_METAL_WILD_SHAPE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_CONSTRUCTED_MIND" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_CITY_GUARDIAN" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_TRUE_CONSTRUCT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_BONUS_PROFICIENCIES" level="2" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_METAL_WILD_SHAPE" level="2" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_CONSTRUCTED_MIND" level="6" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_CITY_GUARDIAN" level="10" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_TRUE_CONSTRUCT" level="14" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_BONUS_PROFICIENCIES">
+		<description>
+			<p>Starting at 2nd level, you gain proficiency with dart guns and pistols (including machine pistols)</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_DART_GUN" />
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_LIGHT" />
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_POCKET" />
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_REVOLVER" />
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_MACHINE_PISTOL" />
+			<grant type="Proficiency" id="ID_DCAD_MH_WEAPON_PROFICIENCY_PISTOL_HEAVY" />
+		</rules>
+	</element>
+
+	<element name="Metal Wild Shape" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_METAL_WILD_SHAPE">
+		<description>
+			<p>Also, at 2nd level, whenever you use your Wild Shape feature, your shape is made with metal and pieces of the city, more similar to a construct than a beast. While transformed, your AC increases by your proficiency bonus and the Constitution score of the shape increases by 2.</p>
+			<p class="indent">Starting at 6th level, the Constitution score of the shape increases by 4.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use your Wild Shape feature, your shape is made with metal and pieces of the city, more similar to a construct than a beast. While transformed, your AC increases by {{proficiency}} and the Constitution score of the shape increases by 2.</description>
+			<description level="6">Whenever you use your Wild Shape feature, your shape is made with metal and pieces of the city, more similar to a construct than a beast. While transformed, your AC increases by {{proficiency}} and the Constitution score of the shape increases by 4.</description>
+		</sheet>
+	</element>
+
+	<element name="Construct Mind" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_CONSTRUCTED_MIND">
+		<description>
+			<p>At 6th level, while transformed into a beast, you are considered a construct, you gain a +1 bonus to attack rolls and your attacks count as magical for purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<p class="indent">At 8th level, the attack bonus increases to +2</p>
+		</description>
+		<sheet>
+			<description>While transformed into a beast, you are considered a construct, you gain a +1 bonus to attack rolls and your attacks count as magical for purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+			<description level="8">While transformed into a beast, you are considered a construct, you gain a +2 bonus to attack rolls and your attacks count as magical for purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+	</element>
+
+	<element name="City Guardian" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_CITY_GUARDIAN">
+		<description>
+			<p>At 10th level, you can wild shape into a city guardian for 1 minute. After using this feature, you must finish a long rest to use it again. You can find the statistics of the city guardian later in this supplement.</p>
+			<div class="reference">
+				<div element="ID_DCAD_MH_INFORMATION_CITY_GUARDIAN_STATBLOCK" />
+			</div>
+		</description>
+		<sheet>
+			<description usage="1/Long Rest">You can wild shape into a city guardian for 1 minute.</description>
+			<description level="14" usage="2/Long Rest">You can wild shape into a city guardian for 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name="City Guardian" type="Information" source="Modern Handbook" id="ID_DCAD_MH_INFORMATION_CITY_GUARDIAN_STATBLOCK">
+		<description>
+			<p><em>Large Construct, Unaligned</em></p>
+			<ul class="unstyled mb">
+			   	<li><strong>Armor Class</strong> 18 (natural armor)</li>
+			   	<li><strong>Hit Points</strong> 60 (8d8 + 24)</li>
+			   	<li><strong>Speed</strong> 30 feet</li>
+		  	</ul>
+		   	<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>13 (+1)</td><td>16 (+3)</td><td>10 (+0)</td><td>10 (+0)</td><td>10 (0)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine</li>
+				<li><strong>Damage Immunities</strong> force, necrotic, poison</li>
+				<li><strong>Condition Immunities</strong>  blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned, stunned.</li>
+				<li><strong>Senses</strong>  darkvision 60 ft., passive Perception 14</li>
+				<li><strong>Languages</strong> understands common but can't speak</li>
+				<li><strong>Challenge</strong> 4</li>
+			</ul>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Multiattack.</em></strong> The city guardian makes two fist attacks.</p>
+			<p><strong><em>Fist.</em></strong> <em> Melee Weapon Attack:</em> +6 to hit, reach 5ft., one creature. <em>Hit:</em> 13 (2d8 + 4) bludgeoning damage.</p>
+		</description>
+	</element>
+
+	<element name="True Construct" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_CIRCLE_CITY_TRUE_CONSTRUCT">
+		<description>
+			<p>At 14th level, you cannot be charmed, paralyzed, petrified or poisoned and you are immune to poison and psychic damage. Additionally, you can wild shape into a city guardian twice before a long rest.</p>
+		</description>
+		<sheet>
+			<description>At 14th level, you cannot be charmed, paralyzed, petrified or poisoned.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC" />
+		</rules>
+	</element>
+</elements>

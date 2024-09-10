@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="cleric-technology.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/cleric-technology.xml" />
+		</update>
+	</info>
+
+	<element name="Technology Domain" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_CLERIC_TECHNOLOGY_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Gods of technology promote the ideals of invention, city building and science. Cities, electronic and mechanical devices are the example of their ideals, empowering everyone who uses the technology in their name.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_BONUS_CANTRIP" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_CD_RECHARGE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_URBAN_BUILDER" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_TECHPRIEST" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_BONUS_CANTRIP" level="1" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_CD_RECHARGE" level="2" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_URBAN_BUILDER" level="6" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_TECHPRIEST" level="17" />
+		</rules>
+	</element>
+
+	<element name="Technology Domain Spells" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_DOMAIN_SPELLS">
+		<description>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>grease, power device</em></td></tr>
+				<tr><td>3rd</td><td><em>arcane lock, relay text</em></td></tr>
+				<tr><td>5th</td><td><em>electromagnetic pulse, lightning bolt</em></td></tr>
+				<tr><td>7th</td><td><em>fabricate, wire walk</em></td></tr>
+				<tr><td>9th</td><td><em>instant connectivity, synchronicity</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GREASE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DCAD_MH_SPELL_POWER_DEVICE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_LOCK" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DCAD_MH_SPELL_RELAY_TEXT" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DCAD_MH_SPELL_ELECTROMAGNETIC_PULSE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DCAD_MH_SPELL_WIRE_WALK" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DCAD_MH_SPELL_INSTANT_CONNECTIVITY" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DCAD_MH_SPELL_SYNCHRONICITY" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Bonus Cantrip" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_BONUS_CANTRIP">
+		<description>
+			<p>When you choose this domain at 1st level, you gain the <i>haywire</i> cantrip if you don't already know it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_DCAD_MH_SPELL_HAYWIRE" spellcasting="Cleric" />
+		</rules>
+	</element>
+	
+	<element name="Channel Divinity: Recharge" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_CD_RECHARGE">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to power electrical devices.</p>
+			<p class="indent">As an action, you touch your holy symbol and evoke pure energy. You gain a number of energy points equal to five times your cleric level that last for 2 hours or until you finish a short or long rest.</p>
+			<p class="indent">As an action, you can touch an electrical device and transfer energy points from your pool to power it. Expending 1 energy point you can power a medium or smaller electrical device for 10 minutes, and expending 4 energy points you can power a Large or Huge-sized electrical device for 10 minutes.</p>
+			<p class="indent">You can increase the duration expending more energy points, up to the maximum amount remaining of your energy points.</p>
+		</description>
+		<sheet alt="Recharge" action="Action" usage="Channel Divinity">
+			<description>You gain a number of {{recharge:charges}} energy points that last for 2 hours or until you finish a short or long rest. &#13;
+			As an action, you can touch an electrical device and transfer energy points from your pool to power it. Expending 1 energy point you can power a medium or smaller electrical device for 10 minutes, and expending 4 energy points you can power a Large or Huge-sized electrical device for 10 minutes. &#13;
+			You can increase the duration expending more energy points, up to the maximum amount remaining of your energy points.</description>
+		</sheet>
+		<rules>
+			<stat name="recharge:charges" value="level:cleric" />
+			<stat name="recharge:charges" value="level:cleric" />
+			<stat name="recharge:charges" value="level:cleric" />
+			<stat name="recharge:charges" value="level:cleric" />
+			<stat name="recharge:charges" value="level:cleric" />
+		</rules>
+	</element>
+
+	<element name="Urban Builder" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_URBAN_BUILDER">
+		<description>
+			<p>Beginning at 6th level, while in an urban environment, you are considered proficient with the engineering kit and the mechanic tools, and you add double your proficiency bonus to checks using those tools instead of your normal proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>While in an urban environment, you are considered proficient with the engineering kit and the mechanic tools, and you add {{urban builder:modifier}} to checks using those tools instead of your normal proficiency bonus.</description>
+		</sheet>
+		<rules>
+			<stat name="urban builder:modifier" value="proficiency" />
+			<stat name="urban builder:modifier" value="proficiency" />
+		</rules>
+	</element>
+	
+	<element name="Divine Strike" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_DIVINE_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with the divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 lightning damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 lightning damage to the target.</description>
+			<description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 lightning damage to the target.</description>
+		</sheet>
+	</element>
+
+	<element name="Techpriest" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_TECHNOLOGY_DOMAIN_TECHPRIEST">
+		<description>
+			<p>At 17th level, you gain resistance to lightning damage and you learn the spell chain lightning, which is always prepared and count as a domain spell for you.</p>
+			<p class="indent">Additionally, all electric devices that require batteries don't expend charges when you use it.</p>
+		</description>
+		<sheet>
+			<description>All electric devices that require batteries don't expend charges when you use it.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Spell" id="ID_PHB_SPELL_CHAIN_LIGHTNING" spellcasting="Cleric" />
+		</rules>
+	</element>
+
+</elements>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="paladin-vigilante.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/paladin-vigilante.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Vigilante" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_PALADIN_OATH_OF_THE_VIGILANTE">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Paladins of the College of Vigilante are in the public's eye by day, while working for an agency or organization by night. These Paladins might simply be famous because who they are, or they may have earned their status because what they've done.</p>
+			<h5>TENETS OF THE VIGILANTE</h5>
+			<p>The following virtues are common to all paladins, even though the situations and laws might be different on each case:</p>
+			<p class="indent"><b><i>Justice in Your Hands. </i></b>Sometimes you must step outside the law to exact justice for keeping peace.</p>
+			<p class="indent"><b><i>Hunt. </i></b>Seek out those who might do harm to the innocent, even if they hide.</p>
+			<p class="indent"><b><i>Eliminate the Guilty. </i></b>The guilty must be destroyed in order for the innocent to live in peace.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_OATH_SPELLS" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_CHANNEL_DIVINITY" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_VIGILANT_AURA" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_STREET_WATCH" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_ETERNAL_VIGILANT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_VIGILANT_AURA" level="7" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_STREET_WATCH" level="15" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_ETERNAL_VIGILANT" level="20" />
+		</rules>
+	</element>
+
+	<element name="Oath Spells" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5>Oath of Conquest Spells</h5>
+			<table>
+				<thead>
+				<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>bane, detect evil and good</em></td></tr>
+				<tr><td>5th</td><td><em>hold person, zone of truth</em></td></tr>
+				<tr><td>9th</td><td><em>haste, speak with dead</em></td></tr>
+				<tr><td>13th</td><td><em>otiluke's resilient sphere, locate creature</em></td></tr>
+				<tr><td>17th</td><td><em>dominate person, hold monster</em></td></tr>
+			</table>      
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BANE" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_CHANNEL_DIVINITY">
+		<compendium display="false" />
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><b><i>Hunter of the Evil.</i></b> You can use your Channel Divinity to strike with divine accuracy upon a creature. When you make an attack roll, you can also use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.</p>
+			<p class="indent"><b><i>Smite the Guilty.</i></b> As an action, you present your holy symbol and speak a prayer, using your Channel Divinity. Choose one creature within 30 feet of you that you can see. That creature must make a Wisdom saving throw. On a failed save, the creature has disadvantage on its attack rolls until the end of your next turn. Additionally, the creature can only take an action or bonus action on its next turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_HUNTER_OF_THE_EVIL" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_SMITE_THE_GUILTY" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity: Hunter of the Evil" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_HUNTER_OF_THE_EVIL">
+		<description>
+			<p>You can use your Channel Divinity to strike with divine accuracy upon a creature. When you make an attack roll, you can also use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.</p>
+		</description>
+		<sheet alt="Hunter of the Evil" usage="Channel Divinity">
+			<description>When you make an attack roll, you can also use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.</description>
+		</sheet>
+	</element>
+
+	<element name="Channel Divinity: Smite the Guilty" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_SMITE_THE_GUILTY">
+		<description>
+			<p>As an action, you present your holy symbol and speak a prayer, using your Channel Divinity. Choose one creature within 30 feet of you that you can see. That creature must make a Wisdom saving throw. On a failed save, the creature has disadvantage on its attack rolls until the end of your next turn. Additionally, the creature can only take an action or bonus action on its next turn.</p>
+		</description>
+		<sheet alt="Smite the Guilty" usage="Channel Divinity">
+			<description>Choose one creature within 30 feet of you that you can see. That creature must make a Wisdom saving throw. On a failed save, the creature has disadvantage on its attack rolls until the end of your next turn. Additionally, the creature can only take an action or bonus action on its next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Vigilant Aura" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_VIGILANT_AURA">
+		<description>
+			<p>By 7th level, you and all friendly creatures within 10 feet of you cannot be surprised. At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You and all friendly creatures within {{vigilant aura:range}} feet of you cannot be surprised.</description>
+		</sheet>
+		<rules>
+			<stat name="vigilant aura:range" value="10" bonus="base" />
+			<stat name="vigilant aura:range" value="30" bonus="base" level="18" />
+		</rules>
+	</element>
+
+	<element name="Street Watch" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_STREET_WATCH">
+		<description>
+			<p>Starting at 15th level, while in an urban environment, you can't be charmed and you have advantage on initiative rolls.</p>
+		</description>
+		<sheet>
+			<description>While in an urban environment, you can't be charmed and you have advantage on initiative rolls.</description>
+		</sheet>
+	</element>
+
+	<element name="Eternal Vigilant" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_OATH_OF_THE_VIGILANTE_ETERNAL_VIGILANT">
+		<description>
+			<p>At 20th level, as an action, you become an entity of true and divine judgment. For 1 minute, you gain the following benefits:</p>
+			<ul>
+				<li>You have advantage on attack rolls you make against creatures which have attacked you or a friendly creature in the last minute.</li>
+				<li>You can use Smite the Guilty once per round as a bonus action without using your Channel Divinity.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You become an entity of true and divine judgment. For 1 minute, you gain the following benefits: &#13;
+			• You have advantage on attack rolls you make against creatures which have attacked you or a friendly creature in the last minute. &#13;
+			• You can use Smite the Guilty once per round as a bonus action without using your Channel Divinity.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="ranger-shadow-hunter-conclave.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/ranger-shadow-hunter-conclave.xml" />
+		</update>
+	</info>
+
+	<element name="Shadpw Hunter Conclave" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_RANGER_SHADOW_HUNTER_CONCLAVE">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>The Shadow Hunter is a tracker, a stalker, a finder of lost things and people—particularly those that do not want to be found. The Shadow Hunter is familiar with all the modern forensics methods of tracking a subject, but places equal faith in magic and supernatural methods.</p>
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_TARGET_CREATURE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_NO_TRACE" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_PLAY_A_HUNCH" />
+			<div element="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_LOCATE_TARGET" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_TARGET_CREATURE" level="3" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_NO_TRACE" level="7" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_PLAY_A_HUNCH" level="11" />
+			<grant type="Archetype Feature" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_LOCATE_TARGET" level="15" />
+		</rules>
+	</element>
+
+	<element name="Target Creature" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_TARGET_CREATURE">
+		<description>
+			<p>At 3rd level, you may spend 10 minutes to designate a creature as your target. You don't need to know the target personally and you can designate the creature only through her actions or a description, such as "the orc from the bank heist". You have advantage on Wisdom (Survival) checks to track your targeted creature, as well as on Intelligence checks to recall information about it. Once you choose a target you must finish a long rest before choosing another.</p>
+		</description>
+		<sheet>
+			<description>You may spend 10 minutes to designate a creature as your target. You don't need to know the target personally and you can designate the creature only through her actions or a description. You have advantage on Wisdom (Survival) checks to track your targeted creature, as well as on Intelligence checks to recall information about it.</description>
+		</sheet>
+	</element>
+
+	<element name="No Trace" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_NO_TRACE">
+		<description>
+			<p>At 7th level, you have advantage on checks you make to hide and avoid being detected while you are in your favored terrain or an urban environment. Additionally, while you are tracking your target, you can move stealthily at a normal pace and enemies have disadvantage on Perception checks to track you.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on checks you make to hide and avoid being detected while you are in your favored terrain or an urban environment. Additionally, while you are tracking your target, you can move stealthily at a normal pace and enemies have disadvantage on Perception checks to track you.</description>
+		</sheet>
+	</element>
+	
+	<element name="Play a Hunch" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_PLAY_A_HUNCH">
+		<description>
+			<p>At 11th level, you can use your action and expend one ranger spell slot to determine whether an assumption, hunch, or guess is correct. When you do so, you must state the assertion (such "He has left the building", or "The mayor is an evil man"). Then, the DM rolls a percentile dice. There is a 70% + 1% per ranger level chance of getting a response on the hunch. If the roll is a success, the DM lets the player know if the hunch is true, false, both or neither. A "both" response is possible for vague assumptions such as "the mayor is an evil man", which can be both true and false (he is evil, but not human). An "unknown" response is for questions with no immediate answer. The DM may determine that the hunch is so obvious that it does not require a roll, or that is so vague that there is no chance for success.</p>
+			<p class="indent">A hunch does not translate as a legal truth, and will not stand up in a court of law. Rather it is an obvious fact to the Shadow Hunter alone. Finding proof of an assumption such as "the mayor is a mind flayer" would require additional work.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier and you regain any expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{wisdom:modifier}}/Long Rest">
+			<description>You can expend one ranger spell slot to determine whether an assumption, hunch, or guess is correct. When you do so, you must state the assertion. Then, the DM rolls a percentile dice. There is a 70% + 1% per ranger level chance of getting a response on the hunch. If the roll is a success, the DM lets the player know if the hunch is true, false, both or neither. A "both" response is possible for vague assumptions such as "the mayor is an evil man", which can be both true and false (he is evil, but not human). An "unknown" response is for questions with no immediate answer. The DM may determine that the hunch is so obvious that it does not require a roll, or that is so vague that there is no chance for success.
+			A hunch does not translate as a legal truth, and will not stand up in a court of law. Rather it is an obvious fact to the Shadow Hunter alone. Finding proof of an assumption would require additional work.</description>
+		</sheet>
+	</element>
+
+	<element name="Locate Target" type="Archetype Feature" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_FEATURE_SHADOW_HUNTER_CONCLAVE_LOCATE_TARGET">
+		<description>
+			<p>At 15th level, you gain the supernatural ability to know where your target is. By spending 1 uninterrupted minute in concentration (as if you were concentrating on a spell), you can sense your targeted creature's location if it is within 3 miles of you, and if it's moving, you know the direction of its movement. This ability applies only on the target, and does not reveal attitude, status, or the presence of others around the target.</p>
+			<p class="indent">After you use this feature, you must finish a short or long rest to use it again.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>By spending 1 uninterrupted minute in concentration (as if you were concentrating on a spell), you can sense your targeted creature's location if it is within 3 miles of you, and if it's moving, you know the direction of its movement. This ability applies only on the target, and does not reveal attitude, status, or the presence of others around the target.</description>
+		</sheet>
+	</element>
+
+</elements>
