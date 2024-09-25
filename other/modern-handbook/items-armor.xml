@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/items-armor.xml" />
 		</update>
 	</info>
@@ -276,7 +276,7 @@
 			<set name="proficiency">ID_DCAD_MH_PROFICIENCY_ARMOR_PROFICIENCY_RIOT_SHIELD</set>
 		</setters>
 		<rules>
-			<stat name="ac:riot shield" value="2" bonus="riot shield" />
+			<stat name="ac:shield" value="2" bonus="shield" />
 		</rules>
 	</element>
 
