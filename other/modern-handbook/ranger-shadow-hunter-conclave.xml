@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="ranger-shadow-hunter-conclave.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/ranger-shadow-hunter-conclave.xml" />
 		</update>
 	</info>
 
-	<element name="Shadpw Hunter Conclave" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_RANGER_SHADOW_HUNTER_CONCLAVE">
+	<element name="Shadow Hunter Conclave" type="Archetype" source="Modern Handbook" id="ID_DCAD_MH_ARCHETYPE_RANGER_SHADOW_HUNTER_CONCLAVE">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>The Shadow Hunter is a tracker, a stalker, a finder of lost things and people—particularly those that do not want to be found. The Shadow Hunter is familiar with all the modern forensics methods of tracking a subject, but places equal faith in magic and supernatural methods.</p>
