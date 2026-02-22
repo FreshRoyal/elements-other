@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="muppetborn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/bj-hypes/muppetborn.xml" />
 		</update>
 	</info>
@@ -42,9 +42,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Muppetborn)" supports="Custom Ability Score Increase 1" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="dexterity" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Muppetborn)" supports="Custom Ability Score Increase 1" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<select type="Racial Trait" name="Size (Muppetborn)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
@@ -58,12 +58,6 @@
 			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_SUBRACE" />
 		</rules>
 	</element>
-	<append id="ID_MUPP_LANGUAGE_CLOTHING">
-		<supports>Muppetborn Language</supports>
-	</append>
-	<append id="ID_MUPP_LANGUAGE_VENTRILLO">
-		<supports>Muppetborn Language</supports>
-	</append>
 	<element name="The Hand" type="Racial Trait" source="The Muppetborn" id="ID_MUPP_RACIAL_TRAIT_HAND">
 		<description>
 			<p>Muppetborn mythology speaks of The Hand inside each of them. They innately know the cantrip Mage Hand, however the floating hand can only lift up to five pounds and move up to five feet per character level.</p>
@@ -122,8 +116,8 @@
 		</description>
 		<sheet alt="Muppetborn (Hand of The Monster)" display="false" />
 		<rules>
-			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hand of The Monster)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hand of The Monster)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_YAAAAAY" level="3" />
 		</rules>
 	</element>
@@ -145,8 +139,8 @@
 		</description>
 		<sheet alt="Muppetborn (Hand of The Grouch)" display="false" />
 		<rules>
-			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hand of The Grouch)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="strength" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hand of The Grouch)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_GARBAGE_CAN" level="3" />
 		</rules>
 	</element>
@@ -179,8 +173,8 @@
 		</description>
 		<sheet alt="Muppetborn (Hand of The Animal)" display="false" />
 		<rules>
-			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hand of The Animal)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hand of The Animal)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Racial Trait" id="ID_MUPP_RACIAL_TRAIT_ONE_OF_US" />
 		</rules>
 	</element>
@@ -197,7 +191,7 @@
 		</rules>
 	</element>
 	<element name="Clothing" type="Language" source="The Muppetborn" id="ID_MUPP_LANGUAGE_CLOTHING">
-		<supports>Exotic</supports>
+		<supports>Exotic||Muppetborn Language</supports>
 		<description>
 			<p>Typically spoken by Muppetborn.</p>
 		</description>
@@ -208,7 +202,7 @@
 	</element>
 
 	<element name="Ventrillo" type="Language" source="The Muppetborn" id="ID_MUPP_LANGUAGE_VENTRILLO">
-		<supports>Exotic</supports>
+		<supports>Exotic||Muppetborn Language</supports>
 		<description>
 			<p>Typically spoken by Muppetborn.</p>
 		</description>
