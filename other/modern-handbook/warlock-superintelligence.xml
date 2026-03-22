@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="warlock-superintelligence.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/warlock-superintelligence.xml" />
 		</update>
 	</info>
@@ -55,6 +55,7 @@
 			<extend>ID_DCAD_MH_SPELL_WIRE_WALK</extend>
 			<extend>ID_DCAD_MH_SPELL_INSTANT_CONNECTIVITY</extend>
 			<extend>ID_DCAD_MH_SPELL_SYNCHRONICITY</extend>
+			<extend>ID_WOTC_PHB24_SPELL_ARCANE_EYE</extend>
 		</spellcasting>
 	</element>
 
