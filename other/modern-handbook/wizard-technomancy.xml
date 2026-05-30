@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="wizard-technomancy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/wizard-technomancy.xml" />
 		</update>
 	</info>
@@ -43,7 +43,7 @@
 			<description>Whenever you make an ability check using the chosen tool from this feature, you add twice your proficiency bonus to that roll.</description>
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Tool Proficiency, Machine Empathy" supports="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_ENGINEERING_KIT||ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS||ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_MECHANIC_TOOLS" />
+			<select type="Proficiency" name="Tool Proficiency, Machine Empathy" supports="ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_ENGINEERING_KIT|ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS|ID_DCAD_MH_PROFICIENCY_TOOL_PROFICIENCY_MECHANIC_TOOLS" />
 		</rules>
 	</element>
 
