@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="modern-handbook.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/modern-handbook.index" />
 		</update>
 	</info>
@@ -23,7 +23,7 @@
 		<file name="barbarian-dreadnought.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/barbarian-dreadnought.xml" />
 		<file name="bard-fame.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/bard-fame.xml" />
 		<file name="cleric-technology.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/cleric-technology.xml" />
-		<file name="druid-city" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/druid-city.xml" />
+		<file name="druid-city.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/druid-city.xml" />
 		<file name="fighter-commando.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/fighter-commando.xml" />
 		<file name="monk-gun-fu.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/monk-gun-fu.xml" />
 		<file name="paladin-vigilante.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/paladin-vigilante.xml" />

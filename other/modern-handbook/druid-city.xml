@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="druid-city" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/druid-city.xml" />
+		<update version="0.0.2">
+			<file name="druid-city.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-other/master/other/modern-handbook/druid-city.xml" />
 		</update>
 	</info>
 
